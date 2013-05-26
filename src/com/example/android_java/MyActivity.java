@@ -68,11 +68,11 @@ public class MyActivity extends Activity {
 
     public void getUserName(){
         VK vk = new VK();
-        vk.getUsersInfo(accessToken, userId, "online", new GetResponseCallback<List<Person>>() {
+        vk.getUsersInfo(accessToken, userId, "online", new GetResponseCallback<Response<List<Person>>>() {
             @Override
-            public void callbackCall(List<Person> data) {  //возвращается лист, так как можно получить
+            public void callbackCall(Response<List<Person>> data) {  //возвращается лист, так как можно получить
                 // данные о нескольких людях сразу, написав в аргументах вместо userId "166197615,13451435,13451345"
-                String name = data.get(0).firstName;
+                String name = data.response.get(0).firstName;
             }
         });
     }
