@@ -30,5 +30,5 @@ public class Message {
     public int readState;
     
     @SerializedName("out")
-    public int out;
+    public Integer out;
 }
