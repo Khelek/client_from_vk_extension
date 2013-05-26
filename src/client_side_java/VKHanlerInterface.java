@@ -10,13 +10,13 @@ import client_side_java.VKResponseClasses.LoopMessage;
  * To change this template use File | Settings | File Templates.
  */
 public interface VKHanlerInterface {
-    public void onGetIncomingMessage(LoopMessage msg);   //--Message--
-    public void onGetOutgoingMessage(LoopMessage msg);   //--Message--
+    public void onGetIncomingMessage(LoopMessage msg);
+    public void onGetOutgoingMessage(LoopMessage msg);
     public void onTypingMessageInDialog(int userId);     //приходит примерно раз в пять секунд
     public void onTypingMessageInChat(int userId, int chatId);
     public void onMessageDelete(int messageId);
 
-    //--------    нечто странное   --------------------
+    //--------    нечто странное и не реализованное пока  --------------------
     public void onMessageFlagsReplace(int messageId);
     public void onMessageFlagsSet();
     public void onMessageFlagsReset();
@@ -25,6 +25,6 @@ public interface VKHanlerInterface {
     public void onChatEdit(int chatId, boolean selfEdit);
 
     public void onFriendOnline(int userId);
-    public void onFriendOffline(int userId, boolean away );
-    public void onCall(int userId, int chatId);
+    public void onFriendOffline(int userId, boolean away );   //away - оффлайн по таймауту
+    public void onCall(int userId, int chatId);      //не реализовано
 }

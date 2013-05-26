@@ -5,13 +5,7 @@
 package client_side_java;
 
 import android.os.AsyncTask;
-import client_side_java.VKResponseClasses.Chat;
-import client_side_java.VKResponseClasses.Dialog;
-import client_side_java.VKResponseClasses.Group;
-import client_side_java.VKResponseClasses.Message;
-import client_side_java.VKResponseClasses.Person;
-import client_side_java.VKResponseClasses.Response;
-import client_side_java.VKResponseClasses.VKList;
+import client_side_java.VKResponseClasses.*;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.reflect.TypeToken;
@@ -41,6 +35,7 @@ import java.util.logging.Logger;
 
 
 public class VK {
+    public LongPollLooper longPollLooper;
 
     public void sendMessage(String accessToken, boolean isChatId, Integer id, String message, GetResponseCallback callback){//id = {chat_id: id} || {uid: id}
         String attrId = isChatId ? "chat_id" : "uid";
@@ -106,10 +101,28 @@ public class VK {
         }, responseType);
     }
 
-    public void getLongPollServer(String accessToken, GetResponseCallback callback){
+    public void connectLongPollServer(final String accessToken, final VKHanlerInterface handler, GetResponseCallback callback){     //handler = this например  , callback =  null
         String parametrs[] = {"use_ssl", "0"};
-        Type responseType = null;
+        Type responseType = new TypeToken<Response<LongPollInfo>>() {}.getType();
+        if (callback == null){
+            callback = new GetResponseCallback<Response<LongPollInfo>>() {
+                @Override
+                public void callbackCall(Response<LongPollInfo> data) {
+                       if (data.error == null){
+                           if (longPollLooper != null) longPollLooper.cancel(false);
+                           longPollLooper = new LongPollLooper();
+                           longPollLooper.execute(accessToken, data.response.key, data.response.server, data.response.ts, handler);
+                       }  else {
+                           //errror
+                       }
+                }
+            };
+        }
         new ApplyRequestTask<Integer>().execute(accessToken, "messages.getLongPollServer", parametrs, callback, responseType);
+    }
+
+    public void stopLongPollServer(){
+        longPollLooper.cancel(false);
     }
 
     public void deleteFriend(String accessToken, Integer uid, GetResponseCallback callback){
@@ -148,7 +161,6 @@ class ApplyRequestTask<T> extends AsyncTask<Object, Void, Response<T>> {
             res = null;
         }
         return res;
-
     }
 
     @Override

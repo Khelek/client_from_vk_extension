@@ -9,13 +9,14 @@ import client_side_java.GetResponseCallback;
 import client_side_java.LongPollLooper;
 import client_side_java.VK;
 import client_side_java.VKHanlerInterface;
+import client_side_java.VKResponseClasses.LoopMessage;
 import client_side_java.VKResponseClasses.Person;
 import client_side_java.VKResponseClasses.Response;
 
 import java.io.EOFException;
 import java.util.List;
 
-public class MyActivity extends Activity {
+public class MyActivity extends Activity implements VKHanlerInterface {
     /**
      * Called when the activity is first created.
      */
@@ -26,14 +27,6 @@ public class MyActivity extends Activity {
 
         getUserIdAndAccessToken();
 
-      //   VK vk = new VK();
-     /*   vk.getLongPollServer("token", this, new GetResponseCallback() {
-            @Override
-            public void callbackCall(Object data) {
-                int a = 0;
-                //To change body of implemented methods use File | Settings | File Templates.
-            }
-        });*/
     }
 
     public String accessToken;
@@ -62,8 +55,11 @@ public class MyActivity extends Activity {
     }
 
     public void Process(){
-       getUserName();
-        //sendMess(accessToken);
+       //getUserName();
+
+
+        connectLongPoll(); //подписка на получение обновлений
+        // для остановки используй vk.stopLongPollServer()
     }
 
     public void getUserName(){
@@ -75,6 +71,11 @@ public class MyActivity extends Activity {
                 String name = data.response.get(0).firstName;
             }
         });
+    }
+
+    public void connectLongPoll(){
+           VK vk = new VK();
+           vk.connectLongPollServer(accessToken, this, null);
     }
 
     public static String getAttributeFor(String attrName, String url) throws Exception{
@@ -104,8 +105,58 @@ public class MyActivity extends Activity {
         });
     }
 
-    public void onGetMessage(String message){
-        String testM = message;//делай с ним что хочешь
+    @Override
+    public void onGetIncomingMessage(LoopMessage msg) {
+        int a = 0;
     }
 
+    @Override
+    public void onGetOutgoingMessage(LoopMessage msg) {
+        int a = 0;
+    }
+
+    @Override
+    public void onTypingMessageInDialog(int userId) {
+        int a = 0;
+    }
+
+    @Override
+    public void onTypingMessageInChat(int userId, int chatId) {
+
+    }
+
+    @Override
+    public void onMessageDelete(int messageId) {
+        int a = 0;
+    }
+
+    @Override
+    public void onMessageFlagsReplace(int messageId) {
+    }
+
+    @Override
+    public void onMessageFlagsSet() {
+    }
+
+    @Override
+    public void onMessageFlagsReset() {
+    }
+
+    @Override
+    public void onChatEdit(int chatId, boolean selfEdit) {
+    }
+
+    @Override
+    public void onFriendOnline(int userId) {
+        int a = 0;
+    }
+
+    @Override
+    public void onFriendOffline(int userId, boolean away) {
+            int a = 0;
+    }
+
+    @Override
+    public void onCall(int userId, int chatId) {
+    }
 }

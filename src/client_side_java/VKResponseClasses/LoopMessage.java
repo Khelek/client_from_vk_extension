@@ -5,6 +5,7 @@ import com.google.gson.JsonArray;
 import com.google.gson.reflect.TypeToken;
 
 import java.lang.reflect.Type;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -18,7 +19,7 @@ import java.util.List;
 public class LoopMessage {
     public int messageId;
     public int fromId;
-    public int unixDate;
+    public Date date;
     public String subject;
     public String body;
     public boolean out = false;               //исходящее
@@ -38,11 +39,14 @@ public class LoopMessage {
         this.messageId = gson.fromJson(mess.get(1), int.class);
         int flags = gson.fromJson(mess.get(2), int.class);
         this.fromId = gson.fromJson(mess.get(3), int.class);
-        this.unixDate = gson.fromJson(mess.get(4), int.class);
+        int unixTime = gson.fromJson(mess.get(4), int.class) + 3600*4;  //часовая зона
+        date = new Date((long)unixTime*1000);
         this.subject = gson.fromJson(mess.get(5), String.class);
         this.body = gson.fromJson(mess.get(6), String.class);
         Type responseType = new TypeToken<List<Object>>() {}.getType();
-        this.attachments = gson.fromJson(mess.get(7), responseType);
+        if (mess.size() > 7) {
+            this.attachments = gson.fromJson(mess.get(7), responseType);
+        }
         processFlags(flags);
     }
 
