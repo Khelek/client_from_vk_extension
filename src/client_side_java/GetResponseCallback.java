@@ -1,5 +1,7 @@
 package client_side_java;
 
+import java.io.IOException;
+
 /**
  * Created with IntelliJ IDEA.
  * User: haukot

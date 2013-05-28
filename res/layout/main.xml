@@ -13,5 +13,9 @@
             android:layout_width="fill_parent"
             android:layout_height="230dp"
             android:id="@+id/webView" android:layout_gravity="left|center_vertical"/>
+    <ImageView
+            android:layout_width="131dp"
+            android:layout_height="71dp"
+            android:id="@+id/imageView" android:layout_gravity="left|center_vertical"/>
 </LinearLayout>
 

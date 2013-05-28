@@ -17,7 +17,7 @@ public class Response <T> {
     
     @SerializedName("error")
     public Object error;
-    
+
     public Response(T resp){
         response = resp;
     }

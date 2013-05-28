@@ -1,10 +1,12 @@
 package com.example.android_java;
 
 import android.app.Activity;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.ImageView;
 import client_side_java.GetResponseCallback;
 import client_side_java.LongPollLooper;
 import client_side_java.VK;
@@ -14,6 +16,7 @@ import client_side_java.VKResponseClasses.Person;
 import client_side_java.VKResponseClasses.Response;
 
 import java.io.EOFException;
+import java.io.IOException;
 import java.util.List;
 
 public class MyActivity extends Activity implements VKHanlerInterface {
@@ -55,7 +58,7 @@ public class MyActivity extends Activity implements VKHanlerInterface {
     }
 
     public void Process(){
-       //getUserName();
+       getUserName();
 
 
         connectLongPoll(); //подписка на получение обновлений
@@ -64,11 +67,18 @@ public class MyActivity extends Activity implements VKHanlerInterface {
 
     public void getUserName(){
         VK vk = new VK();
-        vk.getUsersInfo(accessToken, userId, "online", new GetResponseCallback<Response<List<Person>>>() {
+        vk.getUsersInfo(accessToken, userId, "online,photo_50", new GetResponseCallback<Response<List<Person>>>() {
             @Override
             public void callbackCall(Response<List<Person>> data) {  //возвращается лист, так как можно получить
                 // данные о нескольких людях сразу, написав в аргументах вместо userId "166197615,13451435,13451345"
                 String name = data.response.get(0).firstName;
+                data.response.get(0).getBitmapPhoto50(new GetResponseCallback<Bitmap>() {
+                    @Override
+                    public void callbackCall(Bitmap data) {
+                        ImageView imgView = (ImageView) findViewById(R.id.imageView);
+                        imgView.setImageBitmap(data);
+                    }
+                });
             }
         });
     }

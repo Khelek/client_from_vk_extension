@@ -17,7 +17,7 @@ public class Group {
      
     @SerializedName("name")
     public String name;
-    
+
     @SerializedName("friends")
     public List<Person> friends;     
      
