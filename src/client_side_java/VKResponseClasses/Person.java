@@ -30,6 +30,9 @@ public class Person {
     @SerializedName("photo_50")
     private String photo50Url;
 
+    @SerializedName("photo_200")
+    private String photo200Url;
+
     @SerializedName("uid")
     public int uid;
      
@@ -75,6 +78,8 @@ public class Person {
 
     public Bitmap photo50;
 
+    public Bitmap photo200;
+
     /**
      * получить пол персоны
      * @return
@@ -118,6 +123,22 @@ public class Person {
                 callback.callbackCall(img);
             }
         }, photo50Url);
+    }
+
+    /**
+     *
+     * @param callback  GetResponseCallback<Bitmap>
+     * @throws IOException
+     */
+    public void getBitmapPhoto200(final GetResponseCallback callback) {
+        new AsyncImagesLoader().execute(new GetResponseCallback<Bitmap>() {
+            @Override
+            public void callbackCall(Bitmap img) {
+                //if (img == null) ;
+                photo200 = img;
+                callback.callbackCall(img);
+            }
+        }, photo200Url);
     }
 
     private class AsyncImagesLoader extends AsyncTask<Object, Void, Bitmap> {
