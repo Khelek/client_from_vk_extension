@@ -7,6 +7,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ImageView;
+import android.widget.TextView;
 import client_side_java.GetResponseCallback;
 import client_side_java.LongPollLooper;
 import client_side_java.VK;
@@ -65,7 +66,7 @@ public class MyActivity extends Activity implements VKHanlerInterface {
 
     public void getStatusAndRelationAndSexAndCityAndPhoto(){
         final VK vk = new VK();
-        vk.getUsersInfo(accessToken, "5127441", "online,photo_50,sex,relation,city,status", new GetResponseCallback<Response<List<Person>>>() {
+        vk.getUsersInfo(accessToken, "5127441", "online,photo_50,sex,relation,city,status,bdate", new GetResponseCallback<Response<List<Person>>>() {
             @Override
             public void callbackCall(Response<List<Person>> data) {  //возвращается лист, так как можно получить
                 // данные о нескольких людях сразу, написав в аргументах вместо userId "166197615,13451435,13451345"
@@ -77,6 +78,7 @@ public class MyActivity extends Activity implements VKHanlerInterface {
                 int sexId = hum.sexId;
                 Status status = hum.status;
                 City city = hum.city;
+                String birthdate = hum.birthDate;
 
                 hum.getBitmapPhoto50(new GetResponseCallback<Bitmap>() {
                     @Override
@@ -123,7 +125,8 @@ public class MyActivity extends Activity implements VKHanlerInterface {
 
     @Override
     public void onGetIncomingMessage(LoopMessage msg) {
-        int a = 0;
+        TextView t = (TextView)   findViewById(R.id.textView);
+        t.setText(msg.body);
     }
 
     @Override

@@ -55,6 +55,12 @@ public class Person {
     @SerializedName("city")
     public City city;
 
+    /**
+     *  DD.MM.YYYY или DD.MM (если год рождения скрыт). Если дата рождения скрыта целиком, то null
+     */
+    @SerializedName("bdate")
+    public String birthDate;
+
     @SerializedName("status")
     public Status status;
 
