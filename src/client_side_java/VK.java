@@ -47,7 +47,19 @@ public class VK {
     public void getUsersInfo(String accessToken, String uids, String fields, final GetResponseCallback callback){ //callback = function(name){...}, uids: "123123,213123,345325", fields: "sex,photo"
         String parametrs[] = {"uids", uids, "fields", fields};
         Type responseType = new TypeToken<Response<List<Person>>>() {}.getType();
-        new ApplyRequestTask<List<Person>>().execute(accessToken, "users.get", parametrs, callback, responseType);
+        new ApplyRequestTask<List<Person>>().execute(accessToken, "execute.getUsersInfo", parametrs, callback, responseType);
+    }
+
+    /**
+     * Получает текст статуса пользователя или сообщества.
+     * @param accessToken
+     * @param uid для сообщества должен быть отрицательным (-123213)
+     * @param callback GetResponseCallback <Response<Status>>
+     */
+    public void getStatus(String accessToken, Integer uid, final GetResponseCallback callback){ //callback = function(name){...}, uids: "123123,213123,345325", fields: "sex,photo"
+        String parametrs[] = {"uid", uid.toString()};
+        Type responseType = new TypeToken<Response<Status>>() {}.getType();
+        new ApplyRequestTask<List<Person>>().execute(accessToken, "execute.getUsersInfo", parametrs, callback, responseType);
     }
 
     public void getChatInfo(String accessToken, Integer chat_id, String fields, GetResponseCallback callback){
@@ -99,6 +111,39 @@ public class VK {
                 callback.callbackCall(createVKList((JsonArray) data.response, itemType));
             }
         }, responseType);
+    }
+
+    /**
+     * помечает пользователя как онлайн на 15 минут
+     * @param accessToken
+     * @param callback возвращает 1 в случае успеха
+     */
+    public void setOnline(String accessToken, GetResponseCallback callback){
+        Type responseType = new TypeToken<Response<Integer>>() {}.getType();
+        new ApplyRequestTask<List<Person>>().execute(accessToken, "account.setOnline", new String[]{}, callback, responseType);
+    }
+
+    /**
+     * значения ненулевых счетчиков пользователя(непрочитанные сообщение, добавления в друзья и тд)
+     * @param accessToken
+     * @param callback
+     */
+    public void getCounters(String accessToken, GetResponseCallback callback){
+        String parametrs[] = {"filter", "friends, messages, photos, videos, notes, gifts, events, groups"};
+        Type responseType = new TypeToken<Response<Counters>>() {}.getType();
+        new ApplyRequestTask<List<Person>>().execute(accessToken, "account.getCounters",parametrs, callback, responseType);
+    }
+
+    /**
+     * Получает город по id
+     * @param accessToken
+     * @param cids   "1,43,54"
+     * @param callback
+     */
+    public void getCitiesById(String accessToken, String cids, GetResponseCallback callback){
+        String parametrs[] = {"cids", cids};
+        Type responseType = new TypeToken<Response<List<City>>>() {}.getType();
+        new ApplyRequestTask<Integer>().execute(accessToken, "places.getCityById", parametrs, callback, responseType);
     }
 
     public void connectLongPollServer(final String accessToken, final VKHanlerInterface handler, GetResponseCallback callback){     //handler = this например  , callback =  null

@@ -9,6 +9,7 @@ import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.util.Pair;
 import client_side_java.GetResponseCallback;
+import client_side_java.VK;
 import com.google.gson.annotations.SerializedName;
 
 import java.io.IOException;
@@ -23,6 +24,12 @@ import java.util.List;
  */
 
 public class Person {
+    @SerializedName("relation")
+    private int relationId;
+
+    @SerializedName("photo_50")
+    private String photo50Url;
+
     @SerializedName("uid")
     public int uid;
      
@@ -31,12 +38,28 @@ public class Person {
     
     @SerializedName("last_name")
     public String lastName;
-     
-    @SerializedName("photo_50")
-    private String photo50Url;
+
     
     @SerializedName("online")
-    public int online;  
+    public int online;
+
+    /**
+     *  1 - female, 2 - male, 0 - unknown
+     */
+    @SerializedName("sex")
+    public int sexId;
+
+    /**
+     * Это не родной город!
+     */
+    @SerializedName("city")
+    public City city;
+
+    @SerializedName("status")
+    public Status status;
+
+    @SerializedName("relation_partner")
+    public Person relationPartner;
     
     @SerializedName("invited_by")
     public String invitedBy;    // messages.getChat
@@ -46,6 +69,35 @@ public class Person {
 
     public Bitmap photo50;
 
+    /**
+     * получить пол персоны
+     * @return
+     */
+    public String getRelationDescription(){
+        if (relationId == 0) return null;
+        String maleCase[] = {"не женат", "есть подруга", "помолвлен", "женат", "всё сложно", "в активном поиске", "влюблен"};
+        String femaleCase[] = {"не замужем", "есть друг", "помолвлена", "замужем", "всё сложно", "в активном поиске", "влюблена"};
+        if (sexId == 1){
+             return femaleCase[relationId - 1];//так как массивы с нуля, а relation c 1
+        }   else {
+             return maleCase[relationId - 1];
+        }
+    }
+
+    public String getSex(){
+        String res = "";
+          switch (sexId){
+              case 0: res = "";
+                  break;
+              case 1: res = "женский";
+                  break;
+              case 2: res = "мужской";
+                  break;
+          }
+        return res;
+    }
+
+    
     /**
      *
      * @param callback  GetResponseCallback<Bitmap>
@@ -92,7 +144,8 @@ public class Person {
             Bitmap image = BitmapFactory.decodeStream((InputStream) new URL(url).getContent());
             return image;
         }
-}
+    }
+
 }
 
 

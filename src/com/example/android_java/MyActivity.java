@@ -11,9 +11,7 @@ import client_side_java.GetResponseCallback;
 import client_side_java.LongPollLooper;
 import client_side_java.VK;
 import client_side_java.VKHanlerInterface;
-import client_side_java.VKResponseClasses.LoopMessage;
-import client_side_java.VKResponseClasses.Person;
-import client_side_java.VKResponseClasses.Response;
+import client_side_java.VKResponseClasses.*;
 
 import java.io.EOFException;
 import java.io.IOException;
@@ -58,21 +56,29 @@ public class MyActivity extends Activity implements VKHanlerInterface {
     }
 
     public void Process(){
-       getUserName();
+        getStatusAndRelationAndSexAndCityAndPhoto();
 
 
         connectLongPoll(); //подписка на получение обновлений
         // для остановки используй vk.stopLongPollServer()
     }
 
-    public void getUserName(){
-        VK vk = new VK();
-        vk.getUsersInfo(accessToken, userId, "online,photo_50", new GetResponseCallback<Response<List<Person>>>() {
+    public void getStatusAndRelationAndSexAndCityAndPhoto(){
+        final VK vk = new VK();
+        vk.getUsersInfo(accessToken, "5127441", "online,photo_50,sex,relation,city,status", new GetResponseCallback<Response<List<Person>>>() {
             @Override
             public void callbackCall(Response<List<Person>> data) {  //возвращается лист, так как можно получить
                 // данные о нескольких людях сразу, написав в аргументах вместо userId "166197615,13451435,13451345"
-                String name = data.response.get(0).firstName;
-                data.response.get(0).getBitmapPhoto50(new GetResponseCallback<Bitmap>() {
+                Person hum = data.response.get(0);
+                String name = hum.firstName;
+                String relation = hum.getRelationDescription();   //семейное положение
+                Person partner = hum.relationPartner; //возвращается id, first name, last name
+                String sex = hum.getSex();
+                int sexId = hum.sexId;
+                Status status = hum.status;
+                City city = hum.city;
+
+                hum.getBitmapPhoto50(new GetResponseCallback<Bitmap>() {
                     @Override
                     public void callbackCall(Bitmap data) {
                         ImageView imgView = (ImageView) findViewById(R.id.imageView);
