@@ -57,11 +57,24 @@ public class MyActivity extends Activity implements VKHanlerInterface {
     }
 
     public void Process(){
-        getStatusAndRelationAndSexAndCityAndPhoto();
-       //  getFr();
+       // getStatusAndRelationAndSexAndCityAndPhoto();
+         //getFr();
+        getDialogs();
 
         connectLongPoll(); //подписка на получение обновлений
         // для остановки используй vk.stopLongPollServer()
+    }
+
+    public void getDialogs(){
+        VK vk = new VK();
+        vk.getDialogsList(accessToken, 0, "online", new GetResponseCallback<Response<VKList<Dialog>>>() {
+            @Override
+            public void callbackCall(Response<VKList<Dialog>> data) {
+                 int a = 0;
+                Person lastMessagingUser = data.response.items.get(0).user;
+                //To change body of implemented methods use File | Settings | File Templates.
+            }
+        });
     }
 
     public void getStatusAndRelationAndSexAndCityAndPhoto(){
@@ -93,7 +106,7 @@ public class MyActivity extends Activity implements VKHanlerInterface {
 
     public void getFr(){
         VK vk = new VK();
-        vk.getFriendsList(accessToken, 0, 0, "hints", new GetResponseCallback<Response<List<Person>>>() {
+        vk.getFriendsList(accessToken, userId, 0, 0, "photo_50,bdate,sex,city,country,has_mobile,relation,counters", "hints", new GetResponseCallback<Response<List<Person>>>() {
             @Override
             public void callbackCall(Response<List<Person>> data) {
                 int a = 0;

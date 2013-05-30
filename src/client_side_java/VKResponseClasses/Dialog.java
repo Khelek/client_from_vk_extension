@@ -19,9 +19,12 @@ public class Dialog {
     
     @SerializedName("out")
     public int out;
-    
+
     @SerializedName("uid")
-    public int uid;
+    public int uid; //ради совместимости
+    
+    @SerializedName("user")
+    public Person user;
     
     @SerializedName("read_state")
     public int readState;

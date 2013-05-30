@@ -101,20 +101,20 @@ public class VK {
         String parametrs[] = {"offset", offset.toString(), "count", count.toString(),
                 "order", order, "name_case", "nom", "fields", "photo_50,online"};
         Type responseType = new TypeToken<Response<List<Person>>>() {}.getType();
-        new ApplyRequestTask<List<Person>>().execute(accessToken, "friends.get",parametrs, callback, responseType);
+        new ApplyRequestTask<List<Person>>().execute(accessToken, "execute.getFriends",parametrs, callback, responseType);
     }
 
-    public void getFriendsList(String accessToken, Integer offset, Integer count, String fields, String order, GetResponseCallback callback){//callback = function(data), order = "hints"
-        String parametrs[] = {"offset", offset.toString(), "count", count.toString(),
+    public void getFriendsList(String accessToken, String uid, Integer offset, Integer count, String fields, String order, GetResponseCallback callback){//callback = function(data), order = "hints"
+        String parametrs[] = {"uid", uid, "offset", offset.toString(), "count", count.toString(),
                 "order", order, "name_case", "nom", "fields", fields};
         Type responseType = new TypeToken<Response<List<Person>>>() {}.getType();
-        new ApplyRequestTask<List<Person>>().execute(accessToken, "friends.get",parametrs, callback, responseType);
+        new ApplyRequestTask<List<Person>>().execute(accessToken, "execute.getFriends",parametrs, callback, responseType);
     }
 
-    public void getDialogsList(String accessToken, Integer offset, Integer count, final GetResponseCallback callback){//callback = function(data)
-        String parametrs[] = {"offset", offset.toString(), "count", count.toString()};
+    public void getDialogsList(String accessToken, Integer offset, String fields, final GetResponseCallback callback){//callback = function(data)
+        String parametrs[] = {"offset", offset.toString(), "fields", fields};
         Type responseType = new TypeToken<Response<JsonArray>>() {}.getType();
-        new ApplyRequestTask<JsonArray>().execute(accessToken, "messages.getDialogs", parametrs, new GetResponseCallback<Response>() {
+        new ApplyRequestTask<JsonArray>().execute(accessToken, "execute.getDialogs", parametrs, new GetResponseCallback<Response>() {
             @Override
             public void callbackCall(Response data) {
                 Type itemType = new TypeToken<Dialog>() {}.getType();
