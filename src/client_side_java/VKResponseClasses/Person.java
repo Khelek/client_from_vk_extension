@@ -25,7 +25,7 @@ import java.util.List;
 
 public class Person {
     @SerializedName("relation")
-    private int relationId;
+    public int relationId;
 
     @SerializedName("photo_50")
     private String photo50Url;
@@ -57,6 +57,12 @@ public class Person {
      */
     @SerializedName("city")
     public City city;
+
+    @SerializedName("country")
+    public int country;
+
+    @SerializedName("has_mobile")
+    public int hasMobile;
 
     /**
      *  DD.MM.YYYY или DD.MM (если год рождения скрыт). Если дата рождения скрыта целиком, то null
@@ -107,10 +113,8 @@ public class Person {
           }
         return res;
     }
-
     
     /**
-     *
      * @param callback  GetResponseCallback<Bitmap>
      * @throws IOException
      */

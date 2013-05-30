@@ -8,10 +8,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ImageView;
 import android.widget.TextView;
-import client_side_java.GetResponseCallback;
-import client_side_java.LongPollLooper;
-import client_side_java.VK;
-import client_side_java.VKHanlerInterface;
+import client_side_java.*;
 import client_side_java.VKResponseClasses.*;
 
 import java.io.EOFException;
@@ -58,8 +55,8 @@ public class MyActivity extends Activity implements VKHanlerInterface {
 
     public void Process(){
        // getStatusAndRelationAndSexAndCityAndPhoto();
-         //getFr();
-        getDialogs();
+         getFrAndCluster();
+       // getDialogs();
 
         connectLongPoll(); //подписка на получение обновлений
         // для остановки используй vk.stopLongPollServer()
@@ -104,12 +101,13 @@ public class MyActivity extends Activity implements VKHanlerInterface {
         });
     }
 
-    public void getFr(){
+    public void getFrAndCluster(){
         VK vk = new VK();
         vk.getFriendsList(accessToken, userId, 0, 0, "photo_50,bdate,sex,city,country,has_mobile,relation,counters", "hints", new GetResponseCallback<Response<List<Person>>>() {
             @Override
             public void callbackCall(Response<List<Person>> data) {
-                int a = 0;
+                Algorithm al = new Algorithm();
+                List<List<Person>> per = al.clustering(data.response);
                 //To change body of implemented methods use File | Settings | File Templates.
             }
         });
