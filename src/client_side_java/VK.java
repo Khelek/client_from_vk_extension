@@ -9,7 +9,10 @@ import client_side_java.VKResponseClasses.*;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.reflect.TypeToken;
+
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.lang.reflect.Type;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -97,6 +100,13 @@ public class VK {
     public void getFriendsList(String accessToken, Integer offset, Integer count, String order, GetResponseCallback callback){//callback = function(data), order = "hints"
         String parametrs[] = {"offset", offset.toString(), "count", count.toString(),
                 "order", order, "name_case", "nom", "fields", "photo_50,online"};
+        Type responseType = new TypeToken<Response<List<Person>>>() {}.getType();
+        new ApplyRequestTask<List<Person>>().execute(accessToken, "friends.get",parametrs, callback, responseType);
+    }
+
+    public void getFriendsList(String accessToken, Integer offset, Integer count, String fields, String order, GetResponseCallback callback){//callback = function(data), order = "hints"
+        String parametrs[] = {"offset", offset.toString(), "count", count.toString(),
+                "order", order, "name_case", "nom", "fields", fields};
         Type responseType = new TypeToken<Response<List<Person>>>() {}.getType();
         new ApplyRequestTask<List<Person>>().execute(accessToken, "friends.get",parametrs, callback, responseType);
     }
@@ -240,19 +250,19 @@ class ApplyRequestTask<T> extends AsyncTask<Object, Void, Response<T>> {
     }
 
     private <T> Response<T> getJSON(String url, Type responseType) {
-        Scanner scanner;
+        BufferedReader in;
         try {
             URL request = new URL(url);
-            scanner = new Scanner(request.openStream());
+            in = new BufferedReader(new InputStreamReader(request.openStream()));
+            Gson gson = new Gson();
+            Response<T> res = gson.fromJson(in, responseType);
+            in.close();
+            return res;
         } catch (Exception ex) {
             Logger.getLogger(VK.class.getName()).log(Level.SEVERE, null, ex);
             return null;
         }
-            String response = scanner.useDelimiter("\\Z").next();
-            scanner.close();
-            Gson gson = new Gson();
-            Response<T> res = gson.fromJson(response, responseType);
-            return res;
+
 
     }
 

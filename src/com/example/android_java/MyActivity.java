@@ -58,7 +58,7 @@ public class MyActivity extends Activity implements VKHanlerInterface {
 
     public void Process(){
         getStatusAndRelationAndSexAndCityAndPhoto();
-
+       //  getFr();
 
         connectLongPoll(); //подписка на получение обновлений
         // для остановки используй vk.stopLongPollServer()
@@ -66,7 +66,7 @@ public class MyActivity extends Activity implements VKHanlerInterface {
 
     public void getStatusAndRelationAndSexAndCityAndPhoto(){
         final VK vk = new VK();
-        vk.getUsersInfo(accessToken, "5127441", "online,photo_50,sex,relation,city,status,bdate,photo_200", new GetResponseCallback<Response<List<Person>>>() {
+        vk.getUsersInfo(accessToken, "5127441", "online,photo_50,sex,relation,city,status,online", new GetResponseCallback<Response<List<Person>>>() {
             @Override
             public void callbackCall(Response<List<Person>> data) {  //возвращается лист, так как можно получить
                 // данные о нескольких людях сразу, написав в аргументах вместо userId "166197615,13451435,13451345"
@@ -87,6 +87,17 @@ public class MyActivity extends Activity implements VKHanlerInterface {
                         imgView.setImageBitmap(data);
                     }
                 });
+            }
+        });
+    }
+
+    public void getFr(){
+        VK vk = new VK();
+        vk.getFriendsList(accessToken, 0, 0, "hints", new GetResponseCallback<Response<List<Person>>>() {
+            @Override
+            public void callbackCall(Response<List<Person>> data) {
+                int a = 0;
+                //To change body of implemented methods use File | Settings | File Templates.
             }
         });
     }
