@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111"
+    android:gravity="top"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbarStyle="insideOverlay"
+    android:scrollbars="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/MessName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="DialogName"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#eee" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/MessName"
+        android:background="#ddd" >
+
+        <Button
+            android:id="@+id/send"
+            android:onClick="message_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="send" />
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/send"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+
+        </ListView>
+
+        <EditText
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/send"
+            android:layout_toLeftOf="@+id/send"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:textSize="14sp" >
+
+            <requestFocus />
+        </EditText>
+
+    </RelativeLayout>
+  
+</RelativeLayout>

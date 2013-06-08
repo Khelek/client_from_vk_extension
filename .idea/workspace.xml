@@ -6,7 +6,7 @@
         <option name="device" value="2.7in QVGA" />
         <option name="deviceConfiguration" value="Portrait" />
         <option name="targetHashString" value="android-17" />
-        <option name="theme" value="Theme" />
+        <option name="theme" value="AppTheme" />
       </profile>
     </option>
     <option name="selection" value="[Full]" />
@@ -18,41 +18,30 @@
         <option name="dockMode" value="" />
         <option name="nightMode" value="notnight" />
         <option name="targetHashString" value="android-17" />
-        <option name="theme" value="Theme" />
+        <option name="theme" value="AppTheme" />
+        <option name="visible" value="false" />
       </GlobalState>
     </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="416ed36c-807a-4696-aeff-9dc353b79928" name="Default" comment="" />
-    <ignored path="android-java.iws" />
+    <list default="true" id="dd27b509-81ac-4ba7-9fca-140b96b5de28" name="Default" comment="" />
+    <ignored path="untitled4.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="$PROJECT_DIR$/res/values/strings.xml" changelist="416ed36c-807a-4696-aeff-9dc353b79928" time="1368728811116" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="416ed36c-807a-4696-aeff-9dc353b79928" time="1368738532516" ignored="false" />
-    <file path="/MyActivity.java" changelist="416ed36c-807a-4696-aeff-9dc353b79928" time="1369955345622" ignored="false" />
-    <file path="/fragment.java" changelist="416ed36c-807a-4696-aeff-9dc353b79928" time="1369955662448" ignored="false" />
-    <file path="/Client_side_java.java" changelist="416ed36c-807a-4696-aeff-9dc353b79928" time="1368730788140" ignored="false" />
-    <file path="/MyActivityTest.java" changelist="416ed36c-807a-4696-aeff-9dc353b79928" time="1368734766210" ignored="false" />
-    <file path="$PROJECT_DIR$/../untitled/src/maincl.java" changelist="416ed36c-807a-4696-aeff-9dc353b79928" time="1368735185316" ignored="false" />
-    <file path="/maincl.java" changelist="416ed36c-807a-4696-aeff-9dc353b79928" time="1368735100473" ignored="false" />
-    <file path="/Dummy.txt" changelist="416ed36c-807a-4696-aeff-9dc353b79928" time="1368735136928" ignored="false" />
-    <file path="$PROJECT_DIR$/../untitled1/src/Main.java" changelist="416ed36c-807a-4696-aeff-9dc353b79928" time="1368736095555" ignored="false" />
-    <file path="/Main.java" changelist="416ed36c-807a-4696-aeff-9dc353b79928" time="1368735873412" ignored="false" />
-    <file path="/VK.java" changelist="416ed36c-807a-4696-aeff-9dc353b79928" time="1369949751467" ignored="false" />
-    <file path="/LongPollLooper.java" changelist="416ed36c-807a-4696-aeff-9dc353b79928" time="1369591280122" ignored="false" />
-    <file path="/VKHanlerInterface.java" changelist="416ed36c-807a-4696-aeff-9dc353b79928" time="1369592882863" ignored="false" />
-    <file path="/LoopMessage.java" changelist="416ed36c-807a-4696-aeff-9dc353b79928" time="1369592660727" ignored="false" />
-    <file path="/Message.java" changelist="416ed36c-807a-4696-aeff-9dc353b79928" time="1369521486363" ignored="false" />
-    <file path="/LongPollData.java" changelist="416ed36c-807a-4696-aeff-9dc353b79928" time="1369584573903" ignored="false" />
-    <file path="/Update.java" changelist="416ed36c-807a-4696-aeff-9dc353b79928" time="1369584972680" ignored="false" />
-    <file path="/LongPollUpdates.java" changelist="416ed36c-807a-4696-aeff-9dc353b79928" time="1369588865142" ignored="false" />
-    <file path="/Person.java" changelist="416ed36c-807a-4696-aeff-9dc353b79928" time="1369952618210" ignored="false" />
-    <file path="/City.java" changelist="416ed36c-807a-4696-aeff-9dc353b79928" time="1369795167667" ignored="false" />
-    <file path="/Counters.java" changelist="416ed36c-807a-4696-aeff-9dc353b79928" time="1369796923063" ignored="false" />
-    <file path="/Status.java" changelist="416ed36c-807a-4696-aeff-9dc353b79928" time="1369802940897" ignored="false" />
-    <file path="/Audio.java" changelist="416ed36c-807a-4696-aeff-9dc353b79928" time="1369803135996" ignored="false" />
-    <file path="/main.xml" changelist="416ed36c-807a-4696-aeff-9dc353b79928" time="1369854895953" ignored="false" />
-    <file path="/Dialog.java" changelist="416ed36c-807a-4696-aeff-9dc353b79928" time="1369950985856" ignored="false" />
-    <file path="/Algorithm.java" changelist="416ed36c-807a-4696-aeff-9dc353b79928" time="1369956471982" ignored="false" />
+    <file path="/fragment.java" changelist="dd27b509-81ac-4ba7-9fca-140b96b5de28" time="1370657899626" ignored="false" />
+    <file path="/Authorization.java" changelist="dd27b509-81ac-4ba7-9fca-140b96b5de28" time="1370584772575" ignored="false" />
+    <file path="/Message.java" changelist="dd27b509-81ac-4ba7-9fca-140b96b5de28" time="1370657795372" ignored="false" />
+    <file path="/Freinds.java" changelist="dd27b509-81ac-4ba7-9fca-140b96b5de28" time="1370664045453" ignored="false" />
+    <file path="/Dialogs.java" changelist="dd27b509-81ac-4ba7-9fca-140b96b5de28" time="1370646449328" ignored="false" />
+    <file path="/VK.java" changelist="dd27b509-81ac-4ba7-9fca-140b96b5de28" time="1370655969751" ignored="false" />
+    <file path="/Profile.java" changelist="dd27b509-81ac-4ba7-9fca-140b96b5de28" time="1370649890696" ignored="false" />
+    <file path="/LongPollLooper.java" changelist="dd27b509-81ac-4ba7-9fca-140b96b5de28" time="1370655867350" ignored="false" />
+    <file path="/AndroidManifest.xml" changelist="dd27b509-81ac-4ba7-9fca-140b96b5de28" time="1370663514499" ignored="false" />
+    <file path="/listview.xml" changelist="dd27b509-81ac-4ba7-9fca-140b96b5de28" time="1370663940924" ignored="false" />
+    <file path="/Group.java" changelist="dd27b509-81ac-4ba7-9fca-140b96b5de28" time="1370671029707" ignored="false" />
+    <file path="/Person.java" changelist="dd27b509-81ac-4ba7-9fca-140b96b5de28" time="1370670041550" ignored="false" />
+    <file path="/Dummy.txt" changelist="dd27b509-81ac-4ba7-9fca-140b96b5de28" time="1370670179936" ignored="false" />
+    <file path="/grouplist.xml" changelist="dd27b509-81ac-4ba7-9fca-140b96b5de28" time="1370671792862" ignored="false" />
+    <file path="/strings.xml" changelist="dd27b509-81ac-4ba7-9fca-140b96b5de28" time="1370672205081" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,157 +94,7 @@
       </breakpoint>
     </breakpoint_any>
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/client_side_java/LongPollLooper.java" line="56" class="client_side_java.LongPollLooper$1" package="client_side_java">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/client_side_java/LongPollLooper.java" line="52" class="client_side_java.LongPollLooper" package="client_side_java">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/client_side_java/VKResponseClasses/Response.java" line="15" class="client_side_java.VKResponseClasses.Response" package="client_side_java.VKResponseClasses">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/client_side_java/VK.java" line="215" class="client_side_java.ApplyRequestTask" package="client_side_java">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/client_side_java/VK.java" line="261" class="client_side_java.ApplyRequestTask" package="client_side_java">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/example/android_java/MyActivity.java" line="82" class="com.example.android_java.MyActivity$3" package="com.example.android_java">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/client_side_java/VK.java" line="256" class="client_side_java.ApplyRequestTask" package="client_side_java">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/client_side_java/VK.java" line="120" class="client_side_java.VK$12" package="client_side_java">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/example/android_java/MyActivity.java" line="69" class="com.example.android_java.MyActivity$2" package="com.example.android_java">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/client_side_java/Algorithm.java" line="139" class="client_side_java.Algorithm" package="client_side_java">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/client_side_java/Algorithm.java" line="141" class="client_side_java.Algorithm" package="client_side_java">
+      <breakpoint url="file://$PROJECT_DIR$/src/client_side_java/LongPollLooper.java" line="94" class="client_side_java.LongPollLooper" package="client_side_java">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -276,109 +115,134 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
-    <favorites_list name="android-java" />
+    <favorites_list name="untitled4" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MyActivity.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/example/android_java/MyActivity.java">
+      <file leaf-file-name="Dialogs.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/android_vk_client/Dialogs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="117" column="12" selection-start="4504" selection-end="4504" vertical-scroll-proportion="0.5964912">
+            <state line="98" column="66" selection-start="4026" selection-end="4026" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#2108#2475#0" expanded="true" />
-                <element signature="e#2464#2465#0" expanded="true" />
-                <element signature="e#4040#4418#0" expanded="true" />
-                <element signature="e#4407#4408#0" expanded="true" />
+                <element signature="e#3053#3069#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VK.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client_side_java/VK.java">
+      <file leaf-file-name="Message.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/android_vk_client/Message.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="256" column="60" selection-start="12125" selection-end="12125" vertical-scroll-proportion="0.0">
+            <state line="48" column="59" selection-start="1647" selection-end="1647" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#6155#6452#0" expanded="true" />
-                <element signature="e#6441#6442#0" expanded="true" />
+                <element signature="e#2783#2826#0" expanded="false" />
+                <element signature="e#6369#6385#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dialog.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client_side_java/VKResponseClasses/Dialog.java">
+      <file leaf-file-name="dialoglist.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/dialoglist.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="40" selection-start="473" selection-end="473" vertical-scroll-proportion="0.0">
+            <state line="46" column="63" selection-start="1536" selection-end="1536" vertical-scroll-proportion="-7.18">
               <folding />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AsyncTask.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/Application/adt-bundle-linux-x86-20130219/sdk/platforms/android-17/android.jar!/android/os/AsyncTask.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="29" selection-start="307" selection-end="307" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
+          <provider editor-type-id="android-designer">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FutureTask.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/Application/adt-bundle-linux-x86-20130219/sdk/platforms/android-17/android.jar!/java/util/concurrent/FutureTask.class">
+      <file leaf-file-name="Group.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/android_vk_client/Group.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="16" selection-start="1133" selection-end="1133" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Status.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client_side_java/VKResponseClasses/Status.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="27" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Person.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client_side_java/VKResponseClasses/Person.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="103" column="56" selection-start="2485" selection-end="2485" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Algorithm.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client_side_java/Algorithm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="141" column="0" selection-start="5372" selection-end="5372" vertical-scroll-proportion="0.0">
+            <state line="77" column="0" selection-start="2655" selection-end="2655" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#842#853#0" expanded="true" />
-                <element signature="e#4537#4551#0" expanded="true" />
+                <element signature="e#2220#8251#0" expanded="true" />
+                <element signature="e#2415#2425#0" expanded="true" />
+                <element signature="e#3590#3606#0" expanded="true" />
+                <element signature="e#4212#4227#0" expanded="true" />
+                <element signature="e#4607#5746#0" expanded="true" />
+                <element signature="e#5723#5724#0" expanded="true" />
+                <element signature="e#5901#8127#0" expanded="true" />
+                <element signature="e#6471#7502#0" expanded="true" />
+                <element signature="e#7463#7464#0" expanded="true" />
+                <element signature="e#7602#7989#0" expanded="true" />
+                <element signature="e#7950#7951#0" expanded="true" />
+                <element signature="e#8103#8104#0" expanded="true" />
+                <element signature="e#8239#8240#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Response.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client_side_java/VKResponseClasses/Response.java">
+      <file leaf-file-name="Freinds.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/android_vk_client/Freinds.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="40" selection-start="462" selection-end="462" vertical-scroll-proportion="0.0">
+            <state line="140" column="0" selection-start="6033" selection-end="6033" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#1456#1819#0" expanded="true" />
+                <element signature="e#1808#1809#0" expanded="true" />
+                <element signature="e#5899#7008#0" expanded="true" />
+                <element signature="e#6984#6985#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="grouplist.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/grouplist.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="64" selection-start="1499" selection-end="1499" vertical-scroll-proportion="-4.78">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="37" selection-start="88" selection-end="88" vertical-scroll-proportion="-1.2">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="City.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client_side_java/VKResponseClasses/City.java">
+      <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/example/android_vk_client/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="45" selection-start="315" selection-end="315" vertical-scroll-proportion="0.0">
+            <state line="53" column="33" selection-start="1863" selection-end="1863" vertical-scroll-proportion="0.65831435">
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="9" selection-start="265" selection-end="265" vertical-scroll-proportion="-1.5">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_main.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/activity_main.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="53" selection-start="1465" selection-end="1465" vertical-scroll-proportion="-6.88">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
           </provider>
         </entry>
       </file>
@@ -392,22 +256,21 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/src/com/example/android_vk_client/Dialogs.java" />
+        <option value="$PROJECT_DIR$/src/com/example/android_vk_client/Profile.java" />
+        <option value="$PROJECT_DIR$/src/com/example/android_vk_client/Message.java" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/com/example/android_vk_client/Freinds.java" />
         <option value="$PROJECT_DIR$/src/client_side_java/LongPollLooper.java" />
-        <option value="$PROJECT_DIR$/src/client_side_java/VKResponseClasses/LoopMessage.java" />
-        <option value="$PROJECT_DIR$/src/client_side_java/VKHanlerInterface.java" />
-        <option value="$PROJECT_DIR$/src/client_side_java/VKResponseClasses/Group.java" />
-        <option value="$PROJECT_DIR$/src/client_side_java/VKResponseClasses/Response.java" />
-        <option value="$PROJECT_DIR$/src/client_side_java/GetResponseCallback.java" />
-        <option value="$PROJECT_DIR$/src/client_side_java/VKResponseClasses/City.java" />
-        <option value="$PROJECT_DIR$/src/client_side_java/VKResponseClasses/Counters.java" />
-        <option value="$PROJECT_DIR$/src/client_side_java/VKResponseClasses/Status.java" />
-        <option value="$PROJECT_DIR$/src/client_side_java/VKResponseClasses/Audio.java" />
-        <option value="$PROJECT_DIR$/res/layout/main.xml" />
         <option value="$PROJECT_DIR$/src/client_side_java/VK.java" />
-        <option value="$PROJECT_DIR$/src/client_side_java/VKResponseClasses/Dialog.java" />
+        <option value="$PROJECT_DIR$/res/layout/dialoglist.xml" />
+        <option value="$PROJECT_DIR$/res/layout/listview.xml" />
         <option value="$PROJECT_DIR$/src/client_side_java/VKResponseClasses/Person.java" />
-        <option value="$PROJECT_DIR$/src/com/example/android_java/MyActivity.java" />
-        <option value="$PROJECT_DIR$/src/client_side_java/Algorithm.java" />
+        <option value="$PROJECT_DIR$/src/com/example/android_vk_client/Group.java" />
+        <option value="$PROJECT_DIR$/res/layout/main.xml" />
+        <option value="$PROJECT_DIR$/src/com/example/android_vk_client/Authorization.java" />
+        <option value="$PROJECT_DIR$/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/res/layout/grouplist.xml" />
       </list>
     </option>
   </component>
@@ -446,31 +309,33 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="android-java" />
+              <option name="myItemId" value="untitled4" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="android-java" />
+              <option name="myItemId" value="untitled4" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="android-java" />
+              <option name="myItemId" value="untitled4" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="android-java" />
+              <option name="myItemId" value="untitled4" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="android-java" />
+              <option name="myItemId" value="untitled4" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -480,11 +345,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="android-java" />
+              <option name="myItemId" value="untitled4" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="android-java" />
+              <option name="myItemId" value="untitled4" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -492,17 +357,17 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="android_java" />
+              <option name="myItemId" value="android_vk_client" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="android-java" />
+              <option name="myItemId" value="untitled4" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="android-java" />
+              <option name="myItemId" value="untitled4" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -516,11 +381,83 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="android-java" />
+              <option name="myItemId" value="untitled4" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="android-java" />
+              <option name="myItemId" value="untitled4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client_side_java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VKResponseClasses" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled4" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -530,90 +467,29 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/gen/com/example/android_java" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit3" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="OverrideImplement.combined" value="true" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.proportion" value="0.0" />
     <property name="options.splitter.main.proportions" value="0.30166668" />
-    <property name="options.lastSelected" value="project.propCompiler" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="options.lastSelected" value="project.propCompiler" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../android-java" />
     <property name="AndroidLayoutSelectedEditor" value="text-editor" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
-    <property name="dynamic.classpath" value="false" />
   </component>
-  <component name="RecentsManager">
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="junit.framework.TestCase" />
-      <recent name="" />
-    </key>
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.example.android_java" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Android Application.android-java">
-    <configuration default="false" name="MyActivity" type="AndroidRunConfigurationType" factoryName="Android Application" temporary="true">
-      <module name="android-java" />
-      <option name="ACTIVITY_CLASS" value="com.example.android_java.MyActivity" />
-      <option name="MODE" value="specific_activity" />
-      <option name="DEPLOY" value="true" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <RunnerSettings RunnerId="AndroidDebugRunner" />
-      <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="MyActivityTest.testGetToken" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="android-java" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.example.android_java" />
-      <option name="MAIN_CLASS_NAME" value="com.example.android_java.MyActivityTest" />
-      <option name="METHOD_NAME" value="testGetToken" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Android Application.Unnamed">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -736,13 +612,13 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="android-java" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="android-java" />
-      <option name="ACTIVITY_CLASS" value="com.example.android_java.MyActivity" />
-      <option name="MODE" value="specific_activity" />
+    <configuration default="false" name="Unnamed" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="untitled4" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
       <option name="DEPLOY" value="true" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="PREFERRED_AVD" value="anVirtDevice" />
+      <option name="TARGET_SELECTION_MODE" value="USB_DEVICE" />
+      <option name="PREFERRED_AVD" value="" />
       <option name="USE_COMMAND_LINE" value="true" />
       <option name="COMMAND_LINE" value="" />
       <option name="WIPE_USER_DATA" value="false" />
@@ -754,97 +630,50 @@
       <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
       <method />
     </configuration>
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="Android Application.android-java" />
-      <item index="1" class="java.lang.String" itemvalue="Android Application.MyActivity" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.MyActivityTest.testGetToken" />
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Android Application.Unnamed" />
     </list>
-    <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.MyActivityTest.testGetToken" />
-        <item index="1" class="java.lang.String" itemvalue="Android Application.MyActivity" />
-        <item index="2" class="java.lang.String" itemvalue="Android Application.MyActivity" />
-      </list>
-    </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
-    <option name="USER" value="" />
-    <option name="PASSWORD" value="" />
-    <option name="mySSHConnectionTimeout" value="30000" />
-    <option name="mySSHReadTimeout" value="30000" />
-    <option name="LAST_MERGED_REVISION" />
-    <option name="MERGE_DRY_RUN" value="false" />
-    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
-    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
-    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
-    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
-    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
-    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
-    <option name="FORCE_UPDATE" value="false" />
-    <option name="IGNORE_EXTERNALS" value="false" />
-    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="416ed36c-807a-4696-aeff-9dc353b79928" name="Default" comment="" />
-      <created>1368728802731</created>
-      <updated>1368728802731</updated>
+      <changelist id="dd27b509-81ac-4ba7-9fca-140b96b5de28" name="Default" comment="" />
+      <created>1370568911117</created>
+      <updated>1370568911117</updated>
     </task>
     <servers />
-  </component>
-  <component name="TodoView" selected-index="0">
-    <todo-panel id="selected-file">
-      <are-packages-shown value="false" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="default-changelist">
-      <are-packages-shown value="false" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="false" />
-    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-4" width="1303" height="773" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32908365" sideWeight="0.807309" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3258964" sideWeight="0.807309" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988048" sideWeight="0.6704" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.49800798" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988048" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="top" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19269103" sideWeight="0.76573706" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.23426294" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3264" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.50199205" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.4996016" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988048" sideWeight="0.6704" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.0" sideWeight="0.4036545" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20398407" sideWeight="0.6432" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5664" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988048" sideWeight="0.6704" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24940239" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2438247" sideWeight="0.807309" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26294822" sideWeight="0.6704" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.6" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -913,130 +742,161 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/client_side_java/VKResponseClasses/Audio.java">
+    <entry file="file://$PROJECT_DIR$/src/client_side_java/VK.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="4" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client_side_java/VKResponseClasses/LongPollUpdates.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="25" selection-start="437" selection-end="443" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client_side_java/VKResponseClasses/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="4" selection-start="253" selection-end="300" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client_side_java/VKResponseClasses/LoopMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="62" selection-start="673" selection-end="673" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="33" selection-start="460" selection-end="460" vertical-scroll-proportion="-3.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Application/adt-bundle-linux-x86-20130219/sdk/platforms/android-17/android.jar!/java/util/concurrent/FutureTask.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="16" selection-start="1133" selection-end="1133" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Application/adt-bundle-linux-x86-20130219/sdk/platforms/android-17/android.jar!/android/os/AsyncTask.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="29" selection-start="307" selection-end="307" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client_side_java/VKResponseClasses/Counters.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="3" selection-start="307" selection-end="307" vertical-scroll-proportion="0.33515483">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client_side_java/VKResponseClasses/Response.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="40" selection-start="462" selection-end="462" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client_side_java/VKResponseClasses/Status.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="27" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client_side_java/VKResponseClasses/Dialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="40" selection-start="473" selection-end="473" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="258" column="39" selection-start="12196" selection-end="12196" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#8541#9096#0" expanded="true" />
+            <element signature="e#9081#9082#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/client_side_java/VKResponseClasses/Person.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="56" selection-start="2485" selection-end="2485" vertical-scroll-proportion="0.0">
+        <state line="25" column="19" selection-start="585" selection-end="585" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client_side_java/VKResponseClasses/City.java">
+    <entry file="jar://$USER_HOME$/Application/adt-bundle-linux-x86-20130219/sdk/platforms/android-17/android.jar!/android/widget/AdapterView.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="45" selection-start="315" selection-end="315" vertical-scroll-proportion="0.0">
+        <state line="122" column="13" selection-start="5470" selection-end="5470" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client_side_java/VK.java">
+    <entry file="file://$PROJECT_DIR$/res/layout/freindlist.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="256" column="60" selection-start="12125" selection-end="12125" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/listview.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="484" selection-end="777" vertical-scroll-proportion="-3.9">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/android_vk_client/Authorization.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="18" selection-start="2640" selection-end="2640" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/android_vk_client/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="59" selection-start="1647" selection-end="1647" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#6155#6452#0" expanded="true" />
-            <element signature="e#6441#6442#0" expanded="true" />
+            <element signature="e#2783#2826#0" expanded="false" />
+            <element signature="e#6369#6385#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client_side_java/Algorithm.java">
+    <entry file="file://$PROJECT_DIR$/src/com/example/android_vk_client/Freinds.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="141" column="0" selection-start="5372" selection-end="5372" vertical-scroll-proportion="0.0">
+        <state line="140" column="0" selection-start="6033" selection-end="6033" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#1456#1819#0" expanded="true" />
+            <element signature="e#1808#1809#0" expanded="true" />
+            <element signature="e#5899#7008#0" expanded="true" />
+            <element signature="e#6984#6985#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/android_vk_client/Dialogs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="66" selection-start="4026" selection-end="4026" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#3053#3069#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="9" selection-start="265" selection-end="265" vertical-scroll-proportion="-1.5">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="53" selection-start="1465" selection-end="1465" vertical-scroll-proportion="-6.88">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="37" selection-start="88" selection-end="88" vertical-scroll-proportion="-1.2">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/dialoglist.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="63" selection-start="1536" selection-end="1536" vertical-scroll-proportion="-7.18">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/android_vk_client/Group.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="0" selection-start="2655" selection-end="2655" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#842#853#0" expanded="true" />
-            <element signature="e#4537#4551#0" expanded="true" />
+            <element signature="e#2220#8251#0" expanded="true" />
+            <element signature="e#2415#2425#0" expanded="true" />
+            <element signature="e#3590#3606#0" expanded="true" />
+            <element signature="e#4212#4227#0" expanded="true" />
+            <element signature="e#4607#5746#0" expanded="true" />
+            <element signature="e#5723#5724#0" expanded="true" />
+            <element signature="e#5901#8127#0" expanded="true" />
+            <element signature="e#6471#7502#0" expanded="true" />
+            <element signature="e#7463#7464#0" expanded="true" />
+            <element signature="e#7602#7989#0" expanded="true" />
+            <element signature="e#7950#7951#0" expanded="true" />
+            <element signature="e#8103#8104#0" expanded="true" />
+            <element signature="e#8239#8240#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/android_java/MyActivity.java">
+    <entry file="file://$PROJECT_DIR$/res/layout/grouplist.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="12" selection-start="4504" selection-end="4504" vertical-scroll-proportion="0.5964912">
-          <folding>
-            <element signature="e#2108#2475#0" expanded="true" />
-            <element signature="e#2464#2465#0" expanded="true" />
-            <element signature="e#4040#4418#0" expanded="true" />
-            <element signature="e#4407#4408#0" expanded="true" />
-          </folding>
+        <state line="36" column="64" selection-start="1499" selection-end="1499" vertical-scroll-proportion="-4.78">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/android_vk_client/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="33" selection-start="1863" selection-end="1863" vertical-scroll-proportion="0.65831435">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1092,7 +952,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>android-java</last-edited>
+          <last-edited>untitled4</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

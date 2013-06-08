@@ -1,8 +1,9 @@
 package client_side_java;
 
 import android.os.AsyncTask;
+import android.os.Message;
 import client_side_java.VKResponseClasses.*;
-import com.example.android_java.MyActivity;
+import com.example.android_vk_client.Authorization;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.reflect.TypeToken;
@@ -10,8 +11,9 @@ import com.google.gson.reflect.TypeToken;
 import java.lang.reflect.Type;
 import java.net.URL;
 import java.util.Scanner;
-import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import android.os.Handler;
 
 /**
  * Created with IntelliJ IDEA.
@@ -20,33 +22,48 @@ import java.util.logging.Logger;
  * Time: 2:50
  * To change this template use File | Settings | File Templates.
  */
-public class LongPollLooper extends AsyncTask<Object, LongPollUpdates, Object> {
-    VKHanlerInterface handler;
+public class LongPollLooper {
+    VKHanlerInterface activityHandler;
+    Handler threadHandler;
     boolean failed;
     String key;
     String server;
     String ts;
 
-    @Override
-    protected Response doInBackground(Object... args){ //data.response.key, data.response.server, data.response.ts, handler
-        String accessToken = (String)args[0];
-        key = (String)args[1];
-        server = (String)args[2];
-        ts = (String)args[3];
+    public LongPollLooper(String _accessToken, String _key, String _server, String _ts, VKHanlerInterface _handler){
+        key = _key;
+        server = _server;
+        ts = _ts;
         failed = false;
-        handler = (VKHanlerInterface)args[4];
-        while(true){
-            if (!failed){
-                if (isCancelled()) return null;
-                LongPollUpdates updates = getUpdates(key, server, ts);
-                if (updates.failed) {
-                    failed = true; //если истек key
-                    connectLongPoll(accessToken);
+        activityHandler = _handler;
+        threadHandler = new Handler() {
+            public void handleMessage(android.os.Message msg) {
+                processingLongPoll((LongPollUpdates)msg.obj);
+            };
+        };
+        doInBackground(_accessToken);
+    }
+
+    private void doInBackground(final String accessToken){
+        Thread t = new Thread(new Runnable() {
+            public void run() {
+                while(true){
+                    if (!failed){
+                        // if (isCancelled()) return null;
+                        LongPollUpdates updates = getUpdates(key, server, ts);
+                        if (updates.failed) {
+                            failed = true; //если истек key
+                            connectLongPoll(accessToken);
+                        }
+                        ts = updates.ts;
+                        Message msg = new Message();
+                        msg.obj = updates;
+                        threadHandler.sendMessage(msg);
+                    }
                 }
-                ts = updates.ts;
-                publishProgress(updates);
             }
-        }
+        });
+        t.start();
     }
 
     public void connectLongPoll(String accessToken){
@@ -74,7 +91,7 @@ public class LongPollLooper extends AsyncTask<Object, LongPollUpdates, Object> {
             URL request = new URL(url);
             scanner = new Scanner(request.openStream());
         } catch (Exception ex) {
-            Logger.getLogger(VK.class.getName()).log(Level.SEVERE, null, ex);
+            //Logger.getLogger(VK.class.getName()).log(Level.SEVERE, null, ex);
             return null;
         }
         String response = scanner.useDelimiter("\\Z").next();
@@ -82,15 +99,6 @@ public class LongPollLooper extends AsyncTask<Object, LongPollUpdates, Object> {
         Gson gson = new Gson();
         T res = gson.fromJson(response, responseType);
         return res;
-    }
-
-    @Override
-    protected void onProgressUpdate(LongPollUpdates... datas) {
-        processingLongPoll(datas[0]);
-    }
-
-    @Override
-    protected void onPostExecute(Object result) {
     }
 
     public void processingLongPoll(LongPollUpdates data){
@@ -147,43 +155,43 @@ public class LongPollLooper extends AsyncTask<Object, LongPollUpdates, Object> {
 
     public void deleteMessage(JsonArray info){
         int messageId = new Gson().fromJson(info.get(1),int.class);
-        handler.onMessageDelete(messageId);
+        activityHandler.onMessageDelete(messageId);
     }
 
     public void  friendOnline(JsonArray info){
         int userId = new Gson().fromJson(info.get(1),int.class);
-        handler.onFriendOnline(userId);
+        activityHandler.onFriendOnline(userId);
     }
 
     public void  friendOffline(JsonArray info){
         int userId = new Gson().fromJson(info.get(1),int.class);
         boolean away = (new Gson().fromJson(info.get(2),int.class) == 1) ? true : false;
-        handler.onFriendOffline(userId, away);
+        activityHandler.onFriendOffline(userId, away);
     }
 
     public void chatEdit(JsonArray info){
         int chatId = new Gson().fromJson(info.get(1),int.class);
         boolean selfEdit = (info.size() > 2) ? true : false;//возможно нужно проверять третий элемент на истину
-        handler.onChatEdit(chatId, selfEdit);
+        activityHandler.onChatEdit(chatId, selfEdit);
     }
 
     public void typeMessageInDialog(JsonArray info){
         int userId = new Gson().fromJson(info.get(1),int.class);
-        handler.onTypingMessageInDialog(userId);
+        activityHandler.onTypingMessageInDialog(userId);
     }
 
     public void typeMessageInChat(JsonArray info){
         int userId = new Gson().fromJson(info.get(1),int.class);
         int chatId = new Gson().fromJson(info.get(2),int.class);
-        handler.onTypingMessageInChat(userId, chatId);
+        activityHandler.onTypingMessageInChat(userId, chatId);
     }
 
     public void messageHandler(JsonArray mess){
         LoopMessage loopMessage = new LoopMessage(mess);
        if (loopMessage.out) {
-           handler.onGetOutgoingMessage(loopMessage);
+           activityHandler.onGetOutgoingMessage(loopMessage);
        }   else {
-           handler.onGetIncomingMessage(loopMessage);
+           activityHandler.onGetIncomingMessage(loopMessage);
        }
     }
 

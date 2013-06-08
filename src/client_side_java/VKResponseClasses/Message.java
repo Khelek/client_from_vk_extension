@@ -19,7 +19,7 @@ public class Message {
     
     @SerializedName("uid")
     public int uid;
-    
+
     @SerializedName("from_id")
     public int fromId;
     

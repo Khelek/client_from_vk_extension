@@ -29,7 +29,8 @@ import java.util.logging.Logger;
  *
  * @author haukot
  */
- /*callback = new GetResponseCallback() {
+
+/*callback = new GetResponseCallback() {
       @Override
       public void callbackCall() {
           //execution code
@@ -40,9 +41,9 @@ import java.util.logging.Logger;
 public class VK {
     public LongPollLooper longPollLooper;
 
-    public void sendMessage(String accessToken, boolean isChatId, Integer id, String message, GetResponseCallback callback){//id = {chat_id: id} || {uid: id}
+    public void sendMessage(String accessToken, boolean isChatId, String id, String message, GetResponseCallback callback){//id = {chat_id: id} || {uid: id}
         String attrId = isChatId ? "chat_id" : "uid";
-        String parametrs[] = {attrId, id.toString(), "message", message};
+        String parametrs[] = {attrId, id, "message", message};
         Type responseType = new TypeToken<Response<Integer>>() {}.getType();
         new ApplyRequestTask<Integer>().execute(accessToken, "messages.send", parametrs, callback, responseType);
     }
@@ -70,16 +71,20 @@ public class VK {
         Type responseType = new TypeToken<Response<Chat>>() {}.getType();
         new ApplyRequestTask<Chat>().execute(accessToken, "messages.getChat", parametrs, callback, responseType);
     }
-
-    public void getHistoryList(String accessToken, boolean isChatId, Integer id, Integer offset, Integer count, String fields, final GetResponseCallback callback){//id = {chat_id: id} || {uid: id}
+    /*
+     public void getHistoryList(String accessToken, boolean b, String 6030925, int i, int i0, String photo_50online, String hints, GetResponseCallback<Response> responseCallback) {
+        throw new UnsupportedOperationException("Not yet implemented");
+    }
+}*/
+    public void getHistoryList(String accessToken, boolean isChatId, String id, Integer offset, Integer count, String fields, final GetResponseCallback callback){//id = {chat_id: id} || {uid: id}
         String attrId = isChatId ? "chat_id" : "uid";
-        String parametrs[] = {attrId, id.toString(), "offset", offset.toString(), "count", count.toString(), "fields", fields};
-        //parametrs["rev"] = 1;// возвращать сообщения в хронологическом порядке        
+        String parametrs[] = {attrId, id, "offset", offset.toString(), "count", count.toString(), "fields", fields};
+        //parametrs["rev"] = 1;// возвращать сообщения в хронологическом порядке
         Type responseType = new TypeToken<Response<JsonArray>>() {}.getType();
         new ApplyRequestTask<JsonArray>().execute(accessToken, "messages.getHistory", parametrs, new GetResponseCallback<Response>() {
             @Override
             public void callbackCall(Response data) {
-                Type itemType = new TypeToken<Message>() {}.getType();
+                Type itemType = new TypeToken<Messages>() {}.getType();
                 callback.callbackCall(createVKList((JsonArray) data.response, itemType));
             }
         }, responseType);
@@ -91,7 +96,7 @@ public class VK {
         new ApplyRequestTask<JsonArray>().execute(accessToken, "messages.get", parametrs, new GetResponseCallback<Response>() {
             @Override
             public void callbackCall(Response data) {
-                Type itemType = new TypeToken<Message>() {}.getType();
+                Type itemType = new TypeToken<Messages>() {}.getType();
                 callback.callbackCall(createVKList((JsonArray) data.response, itemType));
             }
         }, responseType);
@@ -164,9 +169,8 @@ public class VK {
                 @Override
                 public void callbackCall(Response<LongPollInfo> data) {
                        if (data.error == null){
-                           if (longPollLooper != null) longPollLooper.cancel(false);
-                           longPollLooper = new LongPollLooper();
-                           longPollLooper.execute(accessToken, data.response.key, data.response.server, data.response.ts, handler);
+                         //  if (longPollLooper != null) longPollLooper.cancel(false);
+                           longPollLooper = new LongPollLooper(accessToken, data.response.key, data.response.server, data.response.ts, handler);
                        }  else {
                            //errror
                        }
@@ -177,7 +181,7 @@ public class VK {
     }
 
     public void stopLongPollServer(){
-        longPollLooper.cancel(false);
+        //longPollLooper.cancel(false);
     }
 
     public void deleteFriend(String accessToken, Integer uid, GetResponseCallback callback){
@@ -201,7 +205,7 @@ public class VK {
         }
         return new Response<VKList<T>>(new VKList<T>(count, ls));
     }
-}
+
 
 class ApplyRequestTask<T> extends AsyncTask<Object, Void, Response<T>> {
     private GetResponseCallback callback;
@@ -265,5 +269,5 @@ class ApplyRequestTask<T> extends AsyncTask<Object, Void, Response<T>> {
 
 
     }
-
+  }
 }

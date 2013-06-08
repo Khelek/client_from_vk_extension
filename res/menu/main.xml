@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+     <item
+        android:id="@+id/newMessage"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="Dialogs"
+        android:visible="true"
+        android:icon="@drawable/content_read"
+        android:menuCategory="system">
+    </item>
+    <item
+        android:id="@+id/freinds"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="Freind"
+        android:visible="true"
+        android:icon="@drawable/freinds"
+        android:menuCategory="system">
+    </item>
+    <item
+        android:id="@+id/dialogs"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="Dialogs"
+        android:visible="true"
+        android:icon="@drawable/dialogs"
+        android:menuCategory="system">
+    </item>
+
+</menu>

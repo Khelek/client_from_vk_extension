@@ -4,19 +4,9 @@
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
         >
-    <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Hello World, MyActivity"
-            android:id="@+id/textView"
-            />
     <WebView
             android:layout_width="fill_parent"
-            android:layout_height="230dp"
-            android:id="@+id/webView" android:layout_gravity="left|center_vertical"/>
-    <ImageView
-            android:layout_width="131dp"
-            android:layout_height="71dp"
-            android:id="@+id/imageView" android:layout_gravity="left|center_vertical"/>
+            android:layout_height="fill_parent"
+            android:id="@+id/webView"
+            android:layout_gravity="left|center_vertical"/>
 </LinearLayout>
-

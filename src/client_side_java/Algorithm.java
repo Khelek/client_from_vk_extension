@@ -72,9 +72,9 @@ public class Algorithm {
         String[] options = new String[18];
         options[0] = "-I";                 // max. iterations
         options[1] = "3";
-        options[2] = "-M";                 // max. iterations
+        options[2] = "-M";
         options[3] = "1000";
-        options[4] = "-J";                 // max. iterations
+        options[4] = "-J";
         options[5] = "1000";
         options[6] = "-L";                 //weka.clusterers.XMeans -I 1 -M 1000 -J 1000 -L 2 -H 4 -B 1.0 -C 0.5 -D "weka.core.EuclideanDistance -R first-last" -S 10
         options[7] = "2";

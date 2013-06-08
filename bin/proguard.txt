@@ -1,0 +1,28 @@
+# view AndroidManifest.xml #generated:66
+-keep class com.example.android_vk_client.Authorization { <init>(...); }
+
+# view AndroidManifest.xml #generated:48
+-keep class com.example.android_vk_client.Dialogs { <init>(...); }
+
+# view AndroidManifest.xml #generated:27
+-keep class com.example.android_vk_client.Freinds { <init>(...); }
+
+# view AndroidManifest.xml #generated:17
+-keep class com.example.android_vk_client.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:57
+-keep class com.example.android_vk_client.Message { <init>(...); }
+
+# view AndroidManifest.xml #generated:39
+-keep class com.example.android_vk_client.Profile { <init>(...); }
+
+# onClick res/layout/activity_main.xml #generated:63
+-keepclassmembers class * { *** authorization_Click(...); }
+
+# onClick res/layout/massagelist.xml #generated:30
+-keepclassmembers class * { *** message_send(...); }
+
+# onClick res/layout/profile.xml #generated:19
+# onClick res/layout/profile.xml #generated:66
+-keepclassmembers class * { *** sendMess(...); }
+
