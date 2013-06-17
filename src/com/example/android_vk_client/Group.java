@@ -76,20 +76,20 @@ public class Group extends Activity {
 
                     ListView group = null;
                     if (j > 3) break;
-                    switch (j){
+                    switch (j) {
                         case 0:
-                            group = (ListView)findViewById(R.id.list1);
+                            group = (ListView) findViewById(R.id.list1);
                             break;
                         case 1:
-                            group = (ListView)findViewById(R.id.list2);
+                            group = (ListView) findViewById(R.id.list2);
 
                             break;
                         case 2:
-                            group = (ListView)findViewById(R.id.list3);
+                            group = (ListView) findViewById(R.id.list3);
 
                             break;
                         case 3:
-                            group = (ListView)findViewById(R.id.list4);
+                            group = (ListView) findViewById(R.id.list4);
 
                             break;
                     }

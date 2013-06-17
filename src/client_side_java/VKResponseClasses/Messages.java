@@ -18,7 +18,7 @@ public class Messages {
     public int mid;
     
     @SerializedName("uid")
-    public int uid;
+    public Integer uid;
     
     @SerializedName("from_id")
     public int fromId;
@@ -31,4 +31,14 @@ public class Messages {
     
     @SerializedName("out")
     public Integer out;
+
+    @SerializedName("title")
+    public String title;
+
+    @SerializedName("chat_id")
+    public Integer chatId;
+
+    //chat_active: [86030925, 55827129],
+    //users_count: 3,
+    //admin_id: 5127441
 }

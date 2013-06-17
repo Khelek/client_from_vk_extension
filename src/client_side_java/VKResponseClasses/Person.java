@@ -34,7 +34,7 @@ public class Person {
     private String photo200Url;
 
     @SerializedName("uid")
-    public int uid;
+    public Integer uid;
      
     @SerializedName("first_name")
     public String firstName;
@@ -99,6 +99,10 @@ public class Person {
         }   else {
              return maleCase[relationId - 1];
         }
+    }
+
+    public String getFullName(){
+        return firstName + " " + lastName;
     }
 
     public String getSex(){

@@ -66,8 +66,8 @@ public class VK {
         new ApplyRequestTask<List<Person>>().execute(accessToken, "execute.getUsersInfo", parametrs, callback, responseType);
     }
 
-    public void getChatInfo(String accessToken, Integer chat_id, String fields, GetResponseCallback callback){
-        String parametrs[] = {"chat_id", chat_id.toString(), "fields", fields};
+    public void getChatInfo(String accessToken, String chatId, String fields, GetResponseCallback callback){
+        String parametrs[] = {"chat_id", chatId, "fields", fields};
         Type responseType = new TypeToken<Response<Chat>>() {}.getType();
         new ApplyRequestTask<Chat>().execute(accessToken, "messages.getChat", parametrs, callback, responseType);
     }
@@ -92,6 +92,18 @@ public class VK {
 
     public void getUnreadMessages(String accessToken, Integer count, final GetResponseCallback callback){//count = 0 for all
         String parametrs[] = {"out", "0", "count", count.toString(), "filters", "1"};
+        Type responseType = new TypeToken<Response<JsonArray>>() {}.getType();
+        new ApplyRequestTask<JsonArray>().execute(accessToken, "messages.get", parametrs, new GetResponseCallback<Response>() {
+            @Override
+            public void callbackCall(Response data) {
+                Type itemType = new TypeToken<Messages>() {}.getType();
+                callback.callbackCall(createVKList((JsonArray) data.response, itemType));
+            }
+        }, responseType);
+    }
+
+    public void getMessagesById(String accessToken, String mids, final GetResponseCallback callback){//count = 0 for all
+        String parametrs[] = {"mids", mids};
         Type responseType = new TypeToken<Response<JsonArray>>() {}.getType();
         new ApplyRequestTask<JsonArray>().execute(accessToken, "messages.get", parametrs, new GetResponseCallback<Response>() {
             @Override

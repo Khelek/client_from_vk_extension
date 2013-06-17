@@ -1,5 +1,7 @@
 package client_side_java.VKResponseClasses;
 
+import client_side_java.GetResponseCallback;
+import client_side_java.VK;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.reflect.TypeToken;
@@ -19,6 +21,8 @@ import java.util.List;
 public class LoopMessage {
     public int messageId;
     public int fromId;
+    public int authorUid;
+    public int chatId;
     public Date date;
     public String subject;
     public String body;

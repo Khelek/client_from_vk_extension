@@ -31,15 +31,15 @@ public class Authorization extends Activity {
 
         getUserIdAndAccessToken();
         //getUserName();
-        
+
     }
 
     public String accessToken;
     public String userId;
-    
-    public void getUserIdAndAccessToken(){
+
+    public void getUserIdAndAccessToken() {
         final String address = "http://oauth.vk.com/authorize?client_id=3456670&scope=messages,friends&redirect_uri=http://oauth.vk.com/blank.html&display=popup&response_type=token";
-        WebView wv = (WebView)findViewById(R.id.webView);
+        WebView wv = (WebView) findViewById(R.id.webView);
         WebSettings webSettings = wv.getSettings();
         webSettings.setJavaScriptEnabled(true);
         wv.setWebViewClient(new WebViewClient() {
@@ -50,42 +50,41 @@ public class Authorization extends Activity {
                     userId = getAttributeFor("user_id", url);
                     newActivity();
                     //getUserName();
-                    
-                } catch (Exception e)
-                {
+
+                } catch (Exception e) {
 
                 }
                 return true;
             }
         });
-        
+
         wv.loadUrl(address);
-        
+
     }
 
-    public void getUserName(){
+    public void getUserName() {
         VK vk = new VK();
         vk.getUsersInfo(accessToken, userId.toString(), "online", new GetResponseCallback<Response<List<Person>>>() {
-            
+
             @Override
             public void callbackCall(Response<List<Person>> data) {  //возвращается лист, так как можно получить
                 // данные о нескольких людях сразу, написав в аргументах вместо userId "166197615,13451435,13451345"
                 String name = data.response.get(0).firstName;
-               // TextView myName = (TextView)findViewById(R.id.text);
+                // TextView myName = (TextView)findViewById(R.id.text);
                 //myName.setText(name);
                 newActivity();
             }
-            
+
         });
-        
+
     }
 
-    public static String getAttributeFor(String attrName, String url) throws Exception{
+    public static String getAttributeFor(String attrName, String url) throws Exception {
         String _access_token = "";
         int index = url.indexOf(attrName);
         if (index != -1) {
             index = index + attrName.length() + 1;//"acess_token=", 1 == "=".length()
-            for (char c = url.charAt(index); index <= url.length() - 1 ; index++) {
+            for (char c = url.charAt(index); index <= url.length() - 1; index++) {
                 c = url.charAt(index);
                 if (c == '&') break;
                 _access_token += c;
@@ -98,21 +97,22 @@ public class Authorization extends Activity {
     }
 
 
-    public void onGetMessage(String message){
+    public void onGetMessage(String message) {
         String testM = message;//делай с ним что хочешь
     }
-    
-     public void newActivity(){
-                Intent intent = new Intent(Authorization.this, Profile.class);
-                intent.putExtra("id", userId.toString());
-                intent.putExtra("idFreind", userId.toString());
-                intent.putExtra("accessToken", accessToken);
-	        startActivity(intent);
-     }
-@Override
+
+    public void newActivity() {
+        Intent intent = new Intent(Authorization.this, Profile.class);
+        intent.putExtra("id", userId.toString());
+        intent.putExtra("idFreind", userId.toString());
+        intent.putExtra("accessToken", accessToken);
+        startActivity(intent);
+    }
+
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-	getMenuInflater().inflate(R.menu.main, menu);
-	return true;
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
     }
 }
