@@ -14,6 +14,7 @@ import com.google.gson.annotations.SerializedName;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.Serializable;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.List;
@@ -23,7 +24,7 @@ import java.util.List;
  * @author haukot
  */
 
-public class Person {
+public class Person implements Serializable {
     @SerializedName("relation")
     public int relationId;
 

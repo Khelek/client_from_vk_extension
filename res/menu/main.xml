@@ -3,16 +3,15 @@
      <item
         android:id="@+id/newMessage"
         android:orderInCategory="100"
-        android:showAsAction="always"
-        android:title="Dialogs"
+        android:showAsAction="always|withText"
         android:visible="true"
-        android:icon="@drawable/content_read"
-        android:menuCategory="system">
+        android:menuCategory="system"
+        android:actionLayout="@layout/action_button_foo">
     </item>
     <item
         android:id="@+id/freinds"
         android:orderInCategory="100"
-        android:showAsAction="always"
+        android:showAsAction="always|withText"
         android:title="Freind"
         android:visible="true"
         android:icon="@drawable/freinds"
@@ -21,7 +20,7 @@
     <item
         android:id="@+id/dialogs"
         android:orderInCategory="100"
-        android:showAsAction="always"
+        android:showAsAction="always|withText"
         android:title="Dialogs"
         android:visible="true"
         android:icon="@drawable/dialogs"

@@ -6,11 +6,13 @@ package client_side_java.VKResponseClasses;
 
 import com.google.gson.annotations.SerializedName;
 
+import java.io.Serializable;
+
 /**
  *
  * @author haukot
  */
-public class Dialog {    
+public class Dialog implements Serializable {
     @SerializedName("mid")
     public int mid;
     

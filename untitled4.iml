@@ -7,9 +7,6 @@
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
-    <content url="file://$MODULE_DIR$/gen">
-      <sourceFolder url="file://$MODULE_DIR$/gen" isTestSource="false" />
-    </content>
     <content url="file://$MODULE_DIR$/../untitled4">
       <sourceFolder url="file://$MODULE_DIR$/../untitled4/gen" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../untitled4/src" isTestSource="false" />

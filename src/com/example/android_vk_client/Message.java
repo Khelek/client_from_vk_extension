@@ -173,13 +173,24 @@ public class Message extends Activity implements VKHanlerInterface {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
-        return true;
+        final MenuItem item = menu.findItem(R.id.newMessage);
+        item.getActionView().setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onOptionsItemSelected(item);
+            }
+        });
+
+        return super.onCreateOptionsMenu(menu);
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         String userId =  talkers.get(MY_INDEX).uid.toString();
         switch (item.getItemId()) {
+            case R.id.newMessage:
+                int a = 0;
+                return true;
             case R.id.freinds:
                 Intent intent = new Intent(Message.this, Profile.class);
                 intent.putExtra("idFriend", userId);

@@ -51,10 +51,7 @@ public class Group extends Activity {
         // lv.setLayoutAnimation(controller);
 
 
-    }
-
-    ;
-
+    };
 
     protected void onListItemClick(ListView l, View v, int position, long id) {
         // TODO Auto-generated method stub
@@ -192,14 +189,24 @@ public class Group extends Activity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
-        return true;
+        final MenuItem item = menu.findItem(R.id.newMessage);
+        item.getActionView().setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onOptionsItemSelected(item);
+            }
+        });
+
+        return super.onCreateOptionsMenu(menu);
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
         switch (item.getItemId()) {
-
+            case R.id.newMessage:
+                int a = 0;
+                return true;
             case R.id.freinds:
                 Intent intentProfile = new Intent(Group.this, Profile.class);
                 intentProfile.putExtra("id", id);

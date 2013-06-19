@@ -1,10 +1,14 @@
 package com.example.android_vk_client;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ShapeDrawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -33,6 +37,7 @@ public class Authorization extends Activity {
         //getUserName();
 
     }
+
 
     public String accessToken;
     public String userId;
@@ -113,6 +118,14 @@ public class Authorization extends Activity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
-        return true;
+        final MenuItem item = menu.findItem(R.id.newMessage);
+        item.getActionView().setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onOptionsItemSelected(item);
+            }
+        });
+
+        return super.onCreateOptionsMenu(menu);
     }
 }

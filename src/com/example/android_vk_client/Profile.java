@@ -136,13 +136,23 @@ public class Profile extends Activity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
-        return true;
+        final MenuItem item = menu.findItem(R.id.newMessage);
+        item.getActionView().setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onOptionsItemSelected(item);
+            }
+        });
+
+        return super.onCreateOptionsMenu(menu);
     }
 
     public boolean onOptionsItemSelected(MenuItem item) {
 
         switch (item.getItemId()) {
-
+            case R.id.newMessage:
+                int a = 0;
+                return true;
             case R.id.freinds:
                 Intent intent = new Intent(Profile.this, Friends.class);
                 intent.putExtra("id", userId.toString());
