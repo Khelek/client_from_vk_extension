@@ -31,7 +31,7 @@ import com.example.VkClient.R;
 
 public class Group extends Activity {
     private final Context context = this;
-    private List<Map<String, ?>> items;
+    private List<Map<String, ?>> items = new ArrayList<Map<String, ?>>();
 
     public String id;
     public String accessToken;
@@ -66,35 +66,18 @@ public class Group extends Activity {
         vk.getFriendsList(accessToken, id, 0, 0, "photo_50,online", "hints", new GetResponseCallback<Response<List<Person>>>() {
             @Override
             public void callbackCall(Response<List<Person>> data) {
-                List<ListView> groups = new ArrayList<ListView>();
+                ListView groups = (ListView) findViewById(R.id.listGroup);
                 Algorithm al = new Algorithm();
                 List<List<Person>> friends = al.clustering(data.response);
                 for (int j = 0; j < friends.size(); j++) {
-
-                    ListView group = null;
-                    if (j > 3) break;
-                    switch (j) {
-                        case 0:
-                            group = (ListView) findViewById(R.id.list1);
-                            break;
-                        case 1:
-                            group = (ListView) findViewById(R.id.list2);
-
-                            break;
-                        case 2:
-                            group = (ListView) findViewById(R.id.list3);
-
-                            break;
-                        case 3:
-                            group = (ListView) findViewById(R.id.list4);
-
-                            break;
-                    }
-                    group.setPadding(0, 20, 0, 0);
-                    groups.add(group);
-
-
-                    items = new ArrayList<Map<String, ?>>();
+                    Map<String, Object> map0 = new HashMap<String, Object>();
+                    map0.put("title", null);
+                    map0.put("idFriend", null);
+                    items.add(map0);
+                    Map<String, Object> map2 = new HashMap<String, Object>();
+                    map2.put("title", "Группа №" + (j + 1));
+                    map2.put("idFriend", null);
+                    items.add(map2);
                     for (int i = 0; i < friends.get(j).size(); i++) {
                         Map<String, Object> map = new HashMap<String, Object>();
                         Person friend = friends.get(j).get(i);
@@ -108,82 +91,36 @@ public class Group extends Activity {
                         map.put("idFriend", id);
                         items.add(map);
                     }
-                    final List<SimpleAdapter> adapters = new ArrayList<SimpleAdapter>();
-                    final SimpleAdapter adapter = new SimpleAdapter(context, items, R.layout.freindlist,
-                            new String[]{"title", "status", "idFriend"},
-                            new int[]{R.id.title, R.id.status});
-                    adapters.add(adapter);
-                    groups.get(j).setAdapter(adapter);
-                    itemListener = new OnItemClickListener() {
 
-                        @Override
-                        public void onItemClick(AdapterView<?> parent, View v,
-                                                int position, long id) {
-                            Toast.makeText(getApplicationContext(),
-                                    " удалён.",
-                                    Toast.LENGTH_SHORT).show();
-                            Map<String, ?> itemAtPosition = (Map<String, ?>) parent.getItemAtPosition(position);
-                            Map<String, ?> some = items.get(position);
 
-                            String title = (String) some.get("title");
-                            String idFriend = (String) some.get("idFriend");
+
+                }
+                final SimpleAdapter adapter = new SimpleAdapter(context, items, R.layout.freindlist,
+                        new String[]{"title", "status", "idFriend"},
+                        new int[]{R.id.title, R.id.status});
+                groups.setAdapter(adapter);
+                itemListener = new OnItemClickListener() {
+
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View v,
+                                            int position, long idItem) {
+
+                        Map<String, ?> some = items.get(position);
+                        String idFriend = (String) some.get("idFriend");
+                        if (idFriend != null) {
                             Intent intentProfile = new Intent(Group.this, Profile.class);
                             intentProfile.putExtra("id", id);
                             intentProfile.putExtra("idFriend", idFriend);
                             intentProfile.putExtra("accessToken", accessToken);
                             startActivity(intentProfile);
                         }
-                    };
-                    groups.get(j).setOnItemClickListener(itemListener);
-                    final int finalJ = j;
-                    itemLongListener = new OnItemLongClickListener() {
-
-                        @Override
-                        public boolean onItemLongClick(final AdapterView<?> parent, View v,
-                                                       final int position, long id) {
-
-                            AlertDialog.Builder builder = new AlertDialog.Builder(context);
-                            builder.setMessage("Удалить из списка друзей? ");
-                            builder.setCancelable(false);
-                            builder.setPositiveButton("Да",
-                                    new DialogInterface.OnClickListener() {
-
-                                        @Override
-                                        public void onClick(DialogInterface dialog,
-                                                            int which) {
-
-                                            int id = items.indexOf(parent.getItemAtPosition(position));
-                                            Map<String, ?> selectItem = items.get(id);
-                                            String title = (String) selectItem.get("title");
-                                            items.remove(parent.getItemAtPosition(position));
-                                            adapters.get(finalJ).notifyDataSetChanged();
-                                            Toast.makeText(getApplicationContext(),
-                                                    title + " удалён.",
-                                                    Toast.LENGTH_SHORT).show();
-                                        }
-                                    });
-                            builder.setNegativeButton("Нет",
-                                    new DialogInterface.OnClickListener() {
-                                        @Override
-                                        public void onClick(DialogInterface dialog,
-                                                            int which) {
-                                            dialog.cancel();
-                                        }
-                                    });
-
-                            builder.show();
-
-                            return true;
-                        }
-
-                    };
-                    groups.get(j).setOnItemLongClickListener(itemLongListener);
-                }
+                    }
+                };
+                groups.setOnItemClickListener(itemListener);
             }
 
         });
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

@@ -1,71 +1,41 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#333"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity"
-    android:id="@+id/relative">
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#333"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context=".MainActivity"
+                android:id="@+id/relative">
 
     <RelativeLayout
-        android:id="@+id/processInfo"
-        android:layout_width="240dp"
-        android:layout_height="100dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:background="#911fd3d1" >
+            android:id="@+id/processInfo"
+            android:layout_width="240dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="#911fd3d1" >
 
         <TextView
-            android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_centerVertical="true"
-            android:text="      Подождите, идёт загрузка..."
-            android:textSize="14sp" />
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="      Подождите, идёт загрузка..."
+                android:textSize="14sp" />
 
     </RelativeLayout>
+
     <ListView
             android:orientation="vertical"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/list1"
+            android:id="@+id/listGroup"
             android:layout_alignParentLeft="true"  android:layout_marginTop="35dp"
             android:background="#ffffff">
     </ListView>
-    <ListView
-            android:orientation="vertical"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/list2"
-            android:layout_alignParentLeft="true" android:layout_marginTop="35dp"
-            android:background="#ffffff"
-            android:layout_below="@+id/list1">
-    </ListView>
-    <ListView
-            android:orientation="vertical"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/list3"
-            android:layout_alignParentLeft="true"  android:layout_marginTop="35dp"
-            android:background="#ffffff"
-            android:layout_below="@+id/list2">
-    </ListView>
-    <ListView
-            android:orientation="vertical"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/list4"
-            android:layout_alignParentLeft="true"  android:layout_marginTop="35dp"
-            android:background="#ffffff"
-            android:layout_below="@+id/list3">
-    </ListView>
-    <ScrollView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/scrollView" android:layout_alignParentLeft="true" android:layout_above="@+id/list1"/>
 
 </RelativeLayout>
