@@ -118,7 +118,9 @@ public class Profile extends Activity {
                 userStatus.setText(status.text);
                 City city = hum.city;
                 TextView userCity = (TextView) findViewById(R.id.city);
-                userCity.setText(city.name);
+                if (city != null) {
+                    userCity.setText(city.name);
+                }
 
                 hum.getBitmapPhoto200(new GetResponseCallback<Bitmap>() {
                     @Override

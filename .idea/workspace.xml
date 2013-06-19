@@ -28,9 +28,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/gen/com/example/android_java/Manifest.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/gen/com/example/android_java/R.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/example/android_java/MyActivity.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/android_vk_client/Group.java" afterPath="$PROJECT_DIR$/src/com/example/android_vk_client/Group.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/grouplist.xml" afterPath="$PROJECT_DIR$/res/layout/grouplist.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/android_vk_client/Profile.java" afterPath="$PROJECT_DIR$/src/com/example/android_vk_client/Profile.java" />
     </list>
     <ignored path="untitled4.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,7 +38,7 @@
     <file path="/Freinds.java" changelist="dd27b509-81ac-4ba7-9fca-140b96b5de28" time="1370664045453" ignored="false" />
     <file path="/Dialogs.java" changelist="dd27b509-81ac-4ba7-9fca-140b96b5de28" time="1371610854718" ignored="false" />
     <file path="/VK.java" changelist="dd27b509-81ac-4ba7-9fca-140b96b5de28" time="1371470275099" ignored="false" />
-    <file path="/Profile.java" changelist="dd27b509-81ac-4ba7-9fca-140b96b5de28" time="1371624377813" ignored="false" />
+    <file path="/Profile.java" changelist="dd27b509-81ac-4ba7-9fca-140b96b5de28" time="1371626491887" ignored="false" />
     <file path="/LongPollLooper.java" changelist="dd27b509-81ac-4ba7-9fca-140b96b5de28" time="1371471305533" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="dd27b509-81ac-4ba7-9fca-140b96b5de28" time="1371611720963" ignored="false" />
     <file path="/listview.xml" changelist="dd27b509-81ac-4ba7-9fca-140b96b5de28" time="1370663940924" ignored="false" />
@@ -142,13 +140,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Profile.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Profile.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/example/android_vk_client/Profile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="144" column="41" selection-start="5608" selection-end="5608" vertical-scroll-proportion="-5.44">
+            <state line="132" column="71" selection-start="5183" selection-end="5183" vertical-scroll-proportion="0.91843975">
               <folding>
-                <element signature="e#5445#5606#0" expanded="true" />
-                <element signature="e#5595#5596#0" expanded="true" />
+                <element signature="e#4851#5155#0" expanded="true" />
+                <element signature="e#5136#5137#0" expanded="true" />
+                <element signature="e#5503#5664#0" expanded="true" />
+                <element signature="e#5653#5654#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -166,10 +166,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Group.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Group.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/android_vk_client/Group.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="119" column="69" selection-start="4989" selection-end="4989" vertical-scroll-proportion="0.6900901">
+            <state line="107" column="0" selection-start="4296" selection-end="4296" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1129#1145#0" expanded="true" />
@@ -179,6 +179,7 @@
                 <element signature="e#3209#3225#0" expanded="true" />
                 <element signature="e#4088#4913#0" expanded="true" />
                 <element signature="e#4894#4895#0" expanded="true" />
+                <element signature="e#4988#4989#0" expanded="true" />
                 <element signature="e#5321#5482#0" expanded="true" />
                 <element signature="e#5471#5472#0" expanded="true" />
               </folding>
@@ -238,7 +239,7 @@
       <file leaf-file-name="Message.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/android_vk_client/Message.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="192" column="28" selection-start="7302" selection-end="7302" vertical-scroll-proportion="-2.4">
+            <state line="47" column="41" selection-start="1678" selection-end="1678" vertical-scroll-proportion="-9.76">
               <folding>
                 <element signature="e#6822#6983#0" expanded="true" />
                 <element signature="e#6972#6973#0" expanded="true" />
@@ -278,9 +279,9 @@
         <option value="$PROJECT_DIR$/src/com/example/android_vk_client/Dialogs.java" />
         <option value="$PROJECT_DIR$/src/com/example/android_vk_client/MainActivity.java" />
         <option value="$PROJECT_DIR$/src/com/example/android_vk_client/Message.java" />
-        <option value="$PROJECT_DIR$/src/com/example/android_vk_client/Profile.java" />
         <option value="$PROJECT_DIR$/res/layout/grouplist.xml" />
         <option value="$PROJECT_DIR$/src/com/example/android_vk_client/Group.java" />
+        <option value="$PROJECT_DIR$/src/com/example/android_vk_client/Profile.java" />
       </list>
     </option>
   </component>
@@ -647,7 +648,7 @@
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988048" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="top" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39036545" sideWeight="0.76573706" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39036545" sideWeight="0.76573706" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.23426294" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -779,15 +780,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client_side_java/VKResponseClasses/Dialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="43" selection-start="276" selection-end="299" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/android_vk_client/Authorization.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="71" column="49" selection-start="2230" selection-end="2230" vertical-scroll-proportion="-7.2">
@@ -795,16 +787,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#4208#4369#0" expanded="true" />
             <element signature="e#4358#4359#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/android_vk_client/Dialogs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="133" column="12" selection-start="5208" selection-end="5285" vertical-scroll-proportion="-5.8">
-          <folding>
-            <element signature="e#4867#5028#0" expanded="true" />
-            <element signature="e#5017#5018#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -829,26 +811,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/android_vk_client/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="192" column="28" selection-start="7302" selection-end="7302" vertical-scroll-proportion="-2.4">
-          <folding>
-            <element signature="e#6822#6983#0" expanded="true" />
-            <element signature="e#6972#6973#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/android_vk_client/Profile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="144" column="41" selection-start="5608" selection-end="5608" vertical-scroll-proportion="-5.44">
-          <folding>
-            <element signature="e#5445#5606#0" expanded="true" />
-            <element signature="e#5595#5596#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/grouplist.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -859,9 +821,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/client_side_java/VKResponseClasses/Dialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="43" selection-start="276" selection-end="299" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/android_vk_client/Dialogs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="133" column="12" selection-start="5208" selection-end="5285" vertical-scroll-proportion="-5.8">
+          <folding>
+            <element signature="e#4867#5028#0" expanded="true" />
+            <element signature="e#5017#5018#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/android_vk_client/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="41" selection-start="1678" selection-end="1678" vertical-scroll-proportion="-9.76">
+          <folding>
+            <element signature="e#6822#6983#0" expanded="true" />
+            <element signature="e#6972#6973#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/android_vk_client/Group.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="119" column="69" selection-start="4989" selection-end="4989" vertical-scroll-proportion="0.6900901">
+        <state line="107" column="0" selection-start="4296" selection-end="4296" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1129#1145#0" expanded="true" />
@@ -871,8 +862,21 @@
             <element signature="e#3209#3225#0" expanded="true" />
             <element signature="e#4088#4913#0" expanded="true" />
             <element signature="e#4894#4895#0" expanded="true" />
+            <element signature="e#4988#4989#0" expanded="true" />
             <element signature="e#5321#5482#0" expanded="true" />
             <element signature="e#5471#5472#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/android_vk_client/Profile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="132" column="71" selection-start="5183" selection-end="5183" vertical-scroll-proportion="0.91843975">
+          <folding>
+            <element signature="e#4851#5155#0" expanded="true" />
+            <element signature="e#5136#5137#0" expanded="true" />
+            <element signature="e#5503#5664#0" expanded="true" />
+            <element signature="e#5653#5654#0" expanded="true" />
           </folding>
         </state>
       </provider>
