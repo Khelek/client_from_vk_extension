@@ -38,8 +38,8 @@ public class Profile extends Activity {
 
     public String accessToken;
     public String userId;
-    public String userIdFreind;
-    public String nameFreind;
+    public String userIdFriend;
+    public String nameFriend;
     public String image;
 
     @Override
@@ -48,7 +48,7 @@ public class Profile extends Activity {
         setContentView(R.layout.profile);
 
         userId = getIntent().getExtras().getString("id");
-        userIdFreind = getIntent().getExtras().getString("idFreind");
+        userIdFriend = getIntent().getExtras().getString("idFriend");
         accessToken = getIntent().getExtras().getString("accessToken");
         //setUserProfile();
         getStatusAndRelationAndSexAndCityAndPhoto();
@@ -59,8 +59,7 @@ public class Profile extends Activity {
 
         Intent intent = new Intent(Profile.this, Message.class);
         intent.putExtra("id", userId);
-        intent.putExtra("idFreind", userIdFreind);
-        intent.putExtra("nameFreind", nameFreind);
+        intent.putExtra("idFriend", userIdFriend);
         intent.putExtra("accessToken", accessToken);
         startActivity(intent);
     }
@@ -68,7 +67,7 @@ public class Profile extends Activity {
     public void setUserProfile() {
 
         final VK vk = new VK();
-        vk.getUsersInfo(accessToken, userIdFreind, "online", new GetResponseCallback<Response<List<Person>>>() {
+        vk.getUsersInfo(accessToken, userIdFriend, "online", new GetResponseCallback<Response<List<Person>>>() {
 
             @Override
             public void callbackCall(Response<List<Person>> data) {
@@ -87,16 +86,16 @@ public class Profile extends Activity {
 
     public void getStatusAndRelationAndSexAndCityAndPhoto() {
         final VK vk = new VK();
-        vk.getUsersInfo(accessToken, userIdFreind, "online,photo_200,sex,relation,city,status,online", new GetResponseCallback<Response<List<Person>>>() {
+        vk.getUsersInfo(accessToken, userIdFriend, "online,photo_200,sex,relation,city,status,online", new GetResponseCallback<Response<List<Person>>>() {
             @Override
             public void callbackCall(Response<List<Person>> data) {  //возвращается лист, так как можно получить
                 TextView Id = (TextView) findViewById(R.id.idProfile);
                 Id.setText("" + userId);
                 String name = data.response.get(0).firstName;
                 String family = data.response.get(0).lastName;
-                nameFreind = name + " " + family;
+                nameFriend = name + " " + family;
                 TextView userName = (TextView) findViewById(R.id.nameProfile);
-                userName.setText(nameFreind);
+                userName.setText(nameFriend);
                 // данные о нескольких людях сразу, написав в аргументах вместо userId "166197615,13451435,13451345"
                 Person hum = data.response.get(0);
                 String relation = hum.getRelationDescription();   //семейное положение
@@ -145,7 +144,7 @@ public class Profile extends Activity {
         switch (item.getItemId()) {
 
             case R.id.freinds:
-                Intent intent = new Intent(Profile.this, Freinds.class);
+                Intent intent = new Intent(Profile.this, Friends.class);
                 intent.putExtra("id", userId.toString());
                 intent.putExtra("accessToken", accessToken);
                 startActivity(intent);

@@ -108,12 +108,12 @@ public class Group extends Activity {
                         }
                         int a = friend.uid;
                         String id = "" + a;
-                        map.put("idFreind", id);
+                        map.put("idFriend", id);
                         items.add(map);
                     }
                     final List<SimpleAdapter> adapters = new ArrayList<SimpleAdapter>();
                     final SimpleAdapter adapter = new SimpleAdapter(context, items, R.layout.freindlist,
-                            new String[]{"title", "status", "idFreind"},
+                            new String[]{"title", "status", "idFriend"},
                             new int[]{R.id.title, R.id.status});
                     adapters.add(adapter);
                     groups.get(j).setAdapter(adapter);
@@ -129,10 +129,10 @@ public class Group extends Activity {
                             Map<String, ?> some = items.get(position);
 
                             String title = (String) some.get("title");
-                            String idFreind = (String) some.get("idFreind");
+                            String idFriend = (String) some.get("idFriend");
                             Intent intentProfile = new Intent(Group.this, Profile.class);
                             intentProfile.putExtra("id", id);
-                            intentProfile.putExtra("idFreind", idFreind);
+                            intentProfile.putExtra("idFriend", idFriend);
                             intentProfile.putExtra("accessToken", accessToken);
                             startActivity(intentProfile);
                         }
@@ -203,7 +203,7 @@ public class Group extends Activity {
             case R.id.freinds:
                 Intent intentProfile = new Intent(Group.this, Profile.class);
                 intentProfile.putExtra("id", id);
-                intentProfile.putExtra("idFreind", id);
+                intentProfile.putExtra("idFriend", id);
                 intentProfile.putExtra("accessToken", accessToken);
                 startActivity(intentProfile);
                 return true;

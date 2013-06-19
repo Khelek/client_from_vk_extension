@@ -28,38 +28,31 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/gen/com/example/android_java/Manifest.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/gen/com/example/android_java/R.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/example/android_java/MyActivity.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/example/android_vk_client/Freinds.java" afterPath="$PROJECT_DIR$/src/com/example/android_vk_client/Friends.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/android_vk_client/Authorization.java" afterPath="$PROJECT_DIR$/src/com/example/android_vk_client/Authorization.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/android_vk_client/Dialogs.java" afterPath="$PROJECT_DIR$/src/com/example/android_vk_client/Dialogs.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/android_vk_client/Freinds.java" afterPath="$PROJECT_DIR$/src/com/example/android_vk_client/Freinds.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/android_vk_client/Group.java" afterPath="$PROJECT_DIR$/src/com/example/android_vk_client/Group.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client_side_java/VKResponseClasses/LoopMessage.java" afterPath="$PROJECT_DIR$/src/client_side_java/VKResponseClasses/LoopMessage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/android_vk_client/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/example/android_vk_client/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/android_vk_client/Message.java" afterPath="$PROJECT_DIR$/src/com/example/android_vk_client/Message.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client_side_java/VKResponseClasses/Messages.java" afterPath="$PROJECT_DIR$/src/client_side_java/VKResponseClasses/Messages.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client_side_java/VKResponseClasses/Person.java" afterPath="$PROJECT_DIR$/src/client_side_java/VKResponseClasses/Person.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/android_vk_client/Profile.java" afterPath="$PROJECT_DIR$/src/com/example/android_vk_client/Profile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client_side_java/VK.java" afterPath="$PROJECT_DIR$/src/client_side_java/VK.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/untitled4.iml" afterPath="$PROJECT_DIR$/untitled4.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="untitled4.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/fragment.java" changelist="dd27b509-81ac-4ba7-9fca-140b96b5de28" time="1371468549747" ignored="false" />
+    <file path="/fragment.java" changelist="dd27b509-81ac-4ba7-9fca-140b96b5de28" time="1371611680683" ignored="false" />
     <file path="/Authorization.java" changelist="dd27b509-81ac-4ba7-9fca-140b96b5de28" time="1370584772575" ignored="false" />
     <file path="/Message.java" changelist="dd27b509-81ac-4ba7-9fca-140b96b5de28" time="1371471828997" ignored="false" />
     <file path="/Freinds.java" changelist="dd27b509-81ac-4ba7-9fca-140b96b5de28" time="1370664045453" ignored="false" />
-    <file path="/Dialogs.java" changelist="dd27b509-81ac-4ba7-9fca-140b96b5de28" time="1371457826619" ignored="false" />
+    <file path="/Dialogs.java" changelist="dd27b509-81ac-4ba7-9fca-140b96b5de28" time="1371610854718" ignored="false" />
     <file path="/VK.java" changelist="dd27b509-81ac-4ba7-9fca-140b96b5de28" time="1371470275099" ignored="false" />
-    <file path="/Profile.java" changelist="dd27b509-81ac-4ba7-9fca-140b96b5de28" time="1370649890696" ignored="false" />
+    <file path="/Profile.java" changelist="dd27b509-81ac-4ba7-9fca-140b96b5de28" time="1371610721557" ignored="false" />
     <file path="/LongPollLooper.java" changelist="dd27b509-81ac-4ba7-9fca-140b96b5de28" time="1371471305533" ignored="false" />
-    <file path="/AndroidManifest.xml" changelist="dd27b509-81ac-4ba7-9fca-140b96b5de28" time="1370663514499" ignored="false" />
+    <file path="/AndroidManifest.xml" changelist="dd27b509-81ac-4ba7-9fca-140b96b5de28" time="1371611720963" ignored="false" />
     <file path="/listview.xml" changelist="dd27b509-81ac-4ba7-9fca-140b96b5de28" time="1370663940924" ignored="false" />
     <file path="/Group.java" changelist="dd27b509-81ac-4ba7-9fca-140b96b5de28" time="1370671029707" ignored="false" />
     <file path="/Person.java" changelist="dd27b509-81ac-4ba7-9fca-140b96b5de28" time="1371462089802" ignored="false" />
-    <file path="/Dummy.txt" changelist="dd27b509-81ac-4ba7-9fca-140b96b5de28" time="1371453411081" ignored="false" />
+    <file path="/Dummy.txt" changelist="dd27b509-81ac-4ba7-9fca-140b96b5de28" time="1371609431483" ignored="false" />
     <file path="/grouplist.xml" changelist="dd27b509-81ac-4ba7-9fca-140b96b5de28" time="1370671792862" ignored="false" />
     <file path="/strings.xml" changelist="dd27b509-81ac-4ba7-9fca-140b96b5de28" time="1370672205081" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/plugins/android/lib/android.jar!/org/jetbrains/android/android.xsd" changelist="dd27b509-81ac-4ba7-9fca-140b96b5de28" time="1371453446054" ignored="false" />
@@ -79,6 +72,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -116,7 +110,6 @@
       </breakpoint>
     </breakpoint_any>
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -129,114 +122,109 @@
       <file leaf-file-name="Dialogs.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/android_vk_client/Dialogs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="46" selection-start="1003" selection-end="1003" vertical-scroll-proportion="0.0">
+            <state line="40" column="66" selection-start="1229" selection-end="1229" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1640#2477#0" expanded="true" />
-                <element signature="e#2466#2467#0" expanded="true" />
-                <element signature="e#2807#4549#0" expanded="true" />
-                <element signature="e#3138#3154#0" expanded="true" />
-                <element signature="e#4538#4539#0" expanded="true" />
+                <element signature="e#3134#3150#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Message.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Message.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/android_vk_client/Message.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="237" column="71" selection-start="9028" selection-end="9028" vertical-scroll-proportion="0.47001934">
+            <state line="41" column="60" selection-start="1325" selection-end="1325" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#905#921#0" expanded="true" />
                 <element signature="e#1028#1036#0" expanded="true" />
-                <element signature="e#2835#2999#0" expanded="true" />
-                <element signature="e#2988#2989#0" expanded="true" />
-                <element signature="e#3155#3928#0" expanded="true" />
-                <element signature="e#3916#3917#0" expanded="true" />
-                <element signature="e#4115#4959#0" expanded="true" />
-                <element signature="e#4947#4948#0" expanded="true" />
-                <element signature="e#5416#6446#0" expanded="true" />
-                <element signature="e#5699#5715#0" expanded="true" />
-                <element signature="e#6435#6436#0" expanded="true" />
-                <element signature="e#7827#8102#0" expanded="true" />
-                <element signature="e#8091#8092#0" expanded="true" />
-                <element signature="e#8222#8238#0" expanded="true" />
+                <element signature="e#2828#2992#0" expanded="true" />
+                <element signature="e#2981#2982#0" expanded="true" />
+                <element signature="e#3148#3921#0" expanded="true" />
+                <element signature="e#3909#3910#0" expanded="true" />
+                <element signature="e#4108#5014#0" expanded="true" />
+                <element signature="e#5002#5003#0" expanded="true" />
+                <element signature="e#5471#6501#0" expanded="true" />
+                <element signature="e#5754#5770#0" expanded="true" />
+                <element signature="e#6490#6491#0" expanded="true" />
+                <element signature="e#7882#8157#0" expanded="true" />
+                <element signature="e#8146#8147#0" expanded="true" />
+                <element signature="e#8277#8293#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LongPollLooper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client_side_java/LongPollLooper.java">
+      <file leaf-file-name="Profile.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/android_vk_client/Profile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="201" column="55" selection-start="6875" selection-end="6875" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VK.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client_side_java/VK.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="54" selection-start="3200" selection-end="3200" vertical-scroll-proportion="0.0">
+            <state line="152" column="43" selection-start="5824" selection-end="5824" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#5186#5485#0" expanded="true" />
-                <element signature="e#5474#5475#0" expanded="true" />
+                <element signature="e#0#6142#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#2056#2595#0" expanded="true" />
+                <element signature="e#2583#2584#0" expanded="true" />
+                <element signature="e#2803#5123#0" expanded="true" />
+                <element signature="e#4793#5097#0" expanded="true" />
+                <element signature="e#5078#5079#0" expanded="true" />
+                <element signature="e#5112#5113#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Response.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client_side_java/VKResponseClasses/Response.java">
+      <file leaf-file-name="Friends.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/android_vk_client/Friends.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="13" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="175" column="42" selection-start="7329" selection-end="7329" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1452#1815#0" expanded="true" />
+                <element signature="e#1804#1805#0" expanded="true" />
+                <element signature="e#2466#3463#0" expanded="true" />
+                <element signature="e#3452#3453#0" expanded="true" />
+                <element signature="e#3565#5381#0" expanded="true" />
+                <element signature="e#4039#4901#0" expanded="true" />
+                <element signature="e#4874#4875#0" expanded="true" />
+                <element signature="e#4977#5292#0" expanded="true" />
+                <element signature="e#5265#5266#0" expanded="true" />
+                <element signature="e#5370#5371#0" expanded="true" />
+                <element signature="e#5848#7017#0" expanded="true" />
+                <element signature="e#6169#6185#0" expanded="true" />
+                <element signature="e#7005#7006#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Authorization.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/example/android_vk_client/Authorization.java">
+      <file leaf-file-name="Group.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/example/android_vk_client/Group.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="106" column="83" selection-start="3669" selection-end="3669" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="121" column="31" selection-start="4672" selection-end="4672" vertical-scroll-proportion="0.8876405">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2220#8256#0" expanded="true" />
+                <element signature="e#2415#2425#0" expanded="true" />
+                <element signature="e#3595#3611#0" expanded="true" />
+                <element signature="e#4217#4232#0" expanded="true" />
+                <element signature="e#5728#5729#0" expanded="true" />
+                <element signature="e#5906#8132#0" expanded="true" />
+                <element signature="e#6476#7507#0" expanded="true" />
+                <element signature="e#7468#7469#0" expanded="true" />
+                <element signature="e#7607#7994#0" expanded="true" />
+                <element signature="e#7955#7956#0" expanded="true" />
+                <element signature="e#8108#8109#0" expanded="true" />
+                <element signature="e#8244#8245#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VKList.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client_side_java/VKResponseClasses/VKList.java">
+      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/android_vk_client/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="13" selection-start="290" selection-end="290" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Messages.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client_side_java/VKResponseClasses/Messages.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="52" selection-start="642" selection-end="642" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoopMessage.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client_side_java/VKResponseClasses/LoopMessage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="0" selection-start="2203" selection-end="2203" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Chat.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client_side_java/VKResponseClasses/Chat.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="28" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0">
+            <state line="46" column="68" selection-start="1508" selection-end="1508" vertical-scroll-proportion="-10.1">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -262,22 +250,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/src/com/example/android_vk_client/Freinds.java" />
-        <option value="$PROJECT_DIR$/res/layout/dialoglist.xml" />
-        <option value="$PROJECT_DIR$/res/layout/listview.xml" />
-        <option value="$PROJECT_DIR$/res/layout/main.xml" />
-        <option value="$PROJECT_DIR$/src/com/example/android_vk_client/Authorization.java" />
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/res/layout/grouplist.xml" />
-        <option value="$PROJECT_DIR$/src/com/example/android_vk_client/Group.java" />
         <option value="$PROJECT_DIR$/src/client_side_java/VKResponseClasses/Person.java" />
-        <option value="$PROJECT_DIR$/src/com/example/android_vk_client/Dialogs.java" />
         <option value="$PROJECT_DIR$/src/client_side_java/VK.java" />
         <option value="$PROJECT_DIR$/src/client_side_java/VKResponseClasses/Messages.java" />
         <option value="$PROJECT_DIR$/src/client_side_java/LongPollLooper.java" />
         <option value="$PROJECT_DIR$/src/client_side_java/VKResponseClasses/LoopMessage.java" />
+        <option value="$PROJECT_DIR$/src/com/example/android_vk_client/Profile.java" />
+        <option value="$PROJECT_DIR$/src/com/example/android_vk_client/Authorization.java" />
+        <option value="$PROJECT_DIR$/src/com/example/android_vk_client/Freinds.java" />
+        <option value="$PROJECT_DIR$/src/com/example/android_vk_client/Group.java" />
+        <option value="$PROJECT_DIR$/src/com/example/android_vk_client/MainActivity.java" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/com/example/android_vk_client/Friends.java" />
         <option value="$PROJECT_DIR$/src/com/example/android_vk_client/Message.java" />
+        <option value="$PROJECT_DIR$/src/com/example/android_vk_client/Dialogs.java" />
       </list>
     </option>
   </component>
@@ -285,10 +273,10 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="64" />
-    <option name="y" value="-4" />
-    <option name="width" value="1303" />
-    <option name="height" value="773" />
+    <option name="x" value="65" />
+    <option name="y" value="24" />
+    <option name="width" value="1301" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -316,7 +304,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -385,30 +372,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client_from_vk_extension" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client_side_java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="VKResponseClasses" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -421,7 +387,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="project.propCompiler" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../untitled4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="AndroidLayoutSelectedEditor" value="text-editor" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
@@ -429,8 +395,8 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="Android Application.Unnamed">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -465,19 +431,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -503,6 +456,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -608,31 +574,31 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-4" width="1303" height="773" extended-state="6" />
+    <frame x="65" y="24" width="1301" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988048" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32984293" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="top" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4053156" sideWeight="0.76573706" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39092496" sideWeight="0.76573706" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.23426294" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.4996016" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32809773" sideWeight="0.4996016" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.0" sideWeight="0.4036545" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2438247" sideWeight="0.59468436" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2434158" sideWeight="0.60907507" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32908365" sideWeight="0.807309" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3258964" sideWeight="0.807309" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988048" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -702,102 +668,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/res/layout/dialoglist.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="63" selection-start="1536" selection-end="1536" vertical-scroll-proportion="0.60076046">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/android_vk_client/Group.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="214" column="28" selection-start="9261" selection-end="9261" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/android_vk_client/Freinds.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="198" column="0" selection-start="8138" selection-end="8138" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client_side_java/VKResponseClasses/Dialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="239" selection-end="239" vertical-scroll-proportion="-0.5989011">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client_side_java/VKResponseClasses/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="18" selection-start="2859" selection-end="2859" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client_side_java/VKResponseClasses/Chat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="28" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/android_vk_client/Authorization.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="83" selection-start="3669" selection-end="3669" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Application/adt-bundle-linux-x86-20130219/sdk/platforms/android-17/android.jar!/android/app/Activity.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="19" selection-start="2223" selection-end="2223" vertical-scroll-proportion="0.33123028">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/android_vk_client/Dialogs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="46" selection-start="1003" selection-end="1003" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1640#2477#0" expanded="true" />
-            <element signature="e#2466#2467#0" expanded="true" />
-            <element signature="e#2807#4549#0" expanded="true" />
-            <element signature="e#3138#3154#0" expanded="true" />
-            <element signature="e#4538#4539#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client_side_java/VKResponseClasses/Response.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client_side_java/VKResponseClasses/VKList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="290" selection-end="290" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/client_side_java/VK.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="54" selection-start="3200" selection-end="3200" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#5186#5485#0" expanded="true" />
-            <element signature="e#5474#5475#0" expanded="true" />
-          </folding>
+        <state line="77" column="3" selection-start="3200" selection-end="3200" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -810,7 +684,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/client_side_java/VKResponseClasses/Messages.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="52" selection-start="642" selection-end="642" vertical-scroll-proportion="0.0">
+        <state line="32" column="23" selection-start="642" selection-end="642" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -822,25 +696,149 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/android_vk_client/Authorization.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="111" column="13" selection-start="3774" selection-end="3774" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2111#2645#0" expanded="true" />
+            <element signature="e#2633#2634#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/android_vk_client/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="68" selection-start="1508" selection-end="1508" vertical-scroll-proportion="-10.1">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="33" selection-start="32" selection-end="33" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android-java.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="33" selection-start="32" selection-end="33" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="60" selection-start="1042" selection-end="1042" vertical-scroll-proportion="-3.68">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proguard.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="41" selection-start="272" selection-end="272" vertical-scroll-proportion="0.3429603">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/android_vk_client/Profile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="152" column="43" selection-start="5824" selection-end="5824" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#6142#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2056#2595#0" expanded="true" />
+            <element signature="e#2583#2584#0" expanded="true" />
+            <element signature="e#2803#5123#0" expanded="true" />
+            <element signature="e#4793#5097#0" expanded="true" />
+            <element signature="e#5078#5079#0" expanded="true" />
+            <element signature="e#5112#5113#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/android_vk_client/Friends.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="175" column="42" selection-start="7329" selection-end="7329" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1452#1815#0" expanded="true" />
+            <element signature="e#1804#1805#0" expanded="true" />
+            <element signature="e#2466#3463#0" expanded="true" />
+            <element signature="e#3452#3453#0" expanded="true" />
+            <element signature="e#3565#5381#0" expanded="true" />
+            <element signature="e#4039#4901#0" expanded="true" />
+            <element signature="e#4874#4875#0" expanded="true" />
+            <element signature="e#4977#5292#0" expanded="true" />
+            <element signature="e#5265#5266#0" expanded="true" />
+            <element signature="e#5370#5371#0" expanded="true" />
+            <element signature="e#5848#7017#0" expanded="true" />
+            <element signature="e#6169#6185#0" expanded="true" />
+            <element signature="e#7005#7006#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/android_vk_client/Message.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="237" column="71" selection-start="9028" selection-end="9028" vertical-scroll-proportion="0.47001934">
+        <state line="41" column="60" selection-start="1325" selection-end="1325" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#905#921#0" expanded="true" />
             <element signature="e#1028#1036#0" expanded="true" />
-            <element signature="e#2835#2999#0" expanded="true" />
-            <element signature="e#2988#2989#0" expanded="true" />
-            <element signature="e#3155#3928#0" expanded="true" />
-            <element signature="e#3916#3917#0" expanded="true" />
-            <element signature="e#4115#4959#0" expanded="true" />
-            <element signature="e#4947#4948#0" expanded="true" />
-            <element signature="e#5416#6446#0" expanded="true" />
-            <element signature="e#5699#5715#0" expanded="true" />
-            <element signature="e#6435#6436#0" expanded="true" />
-            <element signature="e#7827#8102#0" expanded="true" />
-            <element signature="e#8091#8092#0" expanded="true" />
-            <element signature="e#8222#8238#0" expanded="true" />
+            <element signature="e#2828#2992#0" expanded="true" />
+            <element signature="e#2981#2982#0" expanded="true" />
+            <element signature="e#3148#3921#0" expanded="true" />
+            <element signature="e#3909#3910#0" expanded="true" />
+            <element signature="e#4108#5014#0" expanded="true" />
+            <element signature="e#5002#5003#0" expanded="true" />
+            <element signature="e#5471#6501#0" expanded="true" />
+            <element signature="e#5754#5770#0" expanded="true" />
+            <element signature="e#6490#6491#0" expanded="true" />
+            <element signature="e#7882#8157#0" expanded="true" />
+            <element signature="e#8146#8147#0" expanded="true" />
+            <element signature="e#8277#8293#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/android_vk_client/Dialogs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="66" selection-start="1229" selection-end="1229" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3134#3150#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/android_vk_client/Group.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="121" column="31" selection-start="4672" selection-end="4672" vertical-scroll-proportion="0.8876405">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2220#8256#0" expanded="true" />
+            <element signature="e#2415#2425#0" expanded="true" />
+            <element signature="e#3595#3611#0" expanded="true" />
+            <element signature="e#4217#4232#0" expanded="true" />
+            <element signature="e#5728#5729#0" expanded="true" />
+            <element signature="e#5906#8132#0" expanded="true" />
+            <element signature="e#6476#7507#0" expanded="true" />
+            <element signature="e#7468#7469#0" expanded="true" />
+            <element signature="e#7607#7994#0" expanded="true" />
+            <element signature="e#7955#7956#0" expanded="true" />
+            <element signature="e#8108#8109#0" expanded="true" />
+            <element signature="e#8244#8245#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -39,10 +39,10 @@ public class Message extends Activity implements VKHanlerInterface {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.massagelist);
-        String userId = getIntent().getExtras().getString("userId");
+        String userId = getIntent().getExtras().getString("id");
         accessToken = getIntent().getExtras().getString("accessToken");
         chatId = getIntent().getExtras().getString("idChat");
-        String userFreindId = getIntent().getExtras().getString("idFriend");
+        String userFriendId = getIntent().getExtras().getString("idFriend");
         //userId = talkers.get(MY_INDEX).uid
         //friendId = talkers.get(FRIEND_INDEX).uid
         //userName = talkers.get(MY_INDEX).getFullName()
@@ -55,8 +55,8 @@ public class Message extends Activity implements VKHanlerInterface {
             getMessagesList(chatId, true);
             isChat = true;
         }  else {
-            getUserAndFriendName(userId, userFreindId);
-            getMessagesList(userFreindId, false);
+            getUserAndFriendName(userId, userFriendId);
+            getMessagesList(userFriendId, false);
             isChat = false;
         }
         // ListView lv = (ListView)findViewById(R.id.list);
@@ -75,7 +75,7 @@ public class Message extends Activity implements VKHanlerInterface {
         } else {
             sendMess(message, talkers.get(FRIEND_INDEX).uid.toString(), false);
         }
-        //очищать поле ввода
+        mess.setText("");
     }
 
     public void sendMess(String mess, String destinationId, boolean isChat) {
@@ -128,6 +128,7 @@ public class Message extends Activity implements VKHanlerInterface {
                 } else {
                     TextView dialogName = (TextView) findViewById(R.id.MessName);
                     dialogName.setText("Заметки");
+                    talkers.add(data.response.get(MY_INDEX));
                 }
             }
 
@@ -181,7 +182,7 @@ public class Message extends Activity implements VKHanlerInterface {
         switch (item.getItemId()) {
             case R.id.freinds:
                 Intent intent = new Intent(Message.this, Profile.class);
-                intent.putExtra("idFreind", userId);
+                intent.putExtra("idFriend", userId);
                 intent.putExtra("id", userId);
                 intent.putExtra("accessToken", accessToken);
 
@@ -189,7 +190,7 @@ public class Message extends Activity implements VKHanlerInterface {
                 startActivity(intent);
                 return true;
             case R.id.dialogs:
-                Intent intent2 = new Intent(Message.this, Freinds.class);
+                Intent intent2 = new Intent(Message.this, Friends.class);
 
                 intent2.putExtra("id", userId);
                 intent2.putExtra("accessToken", accessToken);

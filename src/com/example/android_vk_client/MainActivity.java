@@ -24,7 +24,7 @@ public class MainActivity extends Activity {
         EditText pass = (EditText) findViewById(R.id.password);
         // function autho
         if (true) {
-            Intent intent = new Intent(MainActivity.this, Freinds.class);
+            Intent intent = new Intent(MainActivity.this, Friends.class);
             intent.putExtra("id", 1234);
             startActivity(intent);
         } else {
@@ -44,7 +44,7 @@ public class MainActivity extends Activity {
 
         switch (item.getItemId()) {
             case R.id.freinds:
-                Intent intent = new Intent(MainActivity.this, Freinds.class);
+                Intent intent = new Intent(MainActivity.this, Friends.class);
                 startActivity(intent);
                 return true;
             case R.id.dialogs:

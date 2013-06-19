@@ -104,7 +104,7 @@ public class Authorization extends Activity {
     public void newActivity() {
         Intent intent = new Intent(Authorization.this, Profile.class);
         intent.putExtra("id", userId.toString());
-        intent.putExtra("idFreind", userId.toString());
+        intent.putExtra("idFriend", userId.toString());
         intent.putExtra("accessToken", accessToken);
         startActivity(intent);
     }

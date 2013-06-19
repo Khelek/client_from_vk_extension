@@ -1,7 +1,7 @@
 package com.example.android_vk_client;
 
 import android.widget.*;
-import com.example.android_vk_client.Freinds;
+import com.example.android_vk_client.Friends;
 import com.example.android_vk_client.Message;
 import com.example.android_vk_client.Profile;
 import android.os.Bundle;
@@ -54,12 +54,12 @@ public class Dialogs extends Activity//  implements VKHanlerInterface
                 Map<String, ?> dialog = items.get(position);
                 dialog.get("uid");
                 String title = (String) dialog.get("title");
-                String idFreind = (String) dialog.get("idFreind");
+                String idFriend = (String) dialog.get("idFriend");
                 String idChat = (String) dialog.get("idChat");
                 Intent intentProfile = new Intent(Dialogs.this, Message.class);
                 intentProfile.putExtra("idChat", idChat);
-                intentProfile.putExtra("idFriend", idFreind);
-                intentProfile.putExtra("userId", userId);
+                intentProfile.putExtra("idFriend", idFriend);
+                intentProfile.putExtra("id", userId);
                 intentProfile.putExtra("accessToken", accessToken);
                 startActivity(intentProfile);
             }
@@ -99,7 +99,7 @@ public class Dialogs extends Activity//  implements VKHanlerInterface
                         map.put("idChat", "" +dialog.chatId);
                     }
                     // map.put("readState", "" + dialog.readState);
-                    map.put("idFreind", "" + dialog.uid);
+                    map.put("idFriend", "" + dialog.uid);
                     items.add(map);
                 }
                 adapter = new SimpleAdapter(context, items, R.layout.dialoglist,
@@ -127,12 +127,12 @@ public class Dialogs extends Activity//  implements VKHanlerInterface
             case R.id.freinds:
                 Intent intent = new Intent(Dialogs.this, Profile.class);
                 intent.putExtra("id", userId.toString());
-                intent.putExtra("idFreind", userId.toString());
+                intent.putExtra("idFriend", userId.toString());
                 intent.putExtra("accessToken", accessToken);
                 startActivity(intent);
                 return true;
             case R.id.dialogs:
-                Intent intent2 = new Intent(Dialogs.this, Freinds.class);
+                Intent intent2 = new Intent(Dialogs.this, Friends.class);
                 intent2.putExtra("id", userId.toString());
                 intent2.putExtra("accessToken", accessToken);
                 startActivity(intent2);

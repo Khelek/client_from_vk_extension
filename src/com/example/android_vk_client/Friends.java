@@ -28,7 +28,7 @@ import java.util.Map;
 
 import com.example.VkClient.R;
 
-public class Freinds extends Activity {
+public class Friends extends Activity {
     private final Context context = this;
     private List<Map<String, ?>> items;
     SimpleAdapter adapter;
@@ -44,7 +44,7 @@ public class Freinds extends Activity {
         View.OnClickListener oclBtnOk = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentProfile = new Intent(Freinds.this, Group.class);
+                Intent intentProfile = new Intent(Friends.this, Group.class);
                 intentProfile.putExtra("id", userId);
                 intentProfile.putExtra("accessToken", accessToken);
                 startActivity(intentProfile);
@@ -74,10 +74,10 @@ public class Freinds extends Activity {
                 Map<String, ?> some = items.get(position);
 
                 String title = (String) some.get("title");
-                String idFreind = (String) some.get("idFreind");
-                Intent intentProfile = new Intent(Freinds.this, Profile.class);
+                String idFriend = (String) some.get("idFriend");
+                Intent intentProfile = new Intent(Friends.this, Profile.class);
                 intentProfile.putExtra("id", userId);
-                intentProfile.putExtra("idFreind", idFreind);
+                intentProfile.putExtra("idFriend", idFriend);
                 intentProfile.putExtra("accessToken", accessToken);
                 startActivity(intentProfile);
             }
@@ -150,11 +150,11 @@ public class Freinds extends Activity {
                     }
                     int a = freind.uid;
                     String id = "" + a;
-                    map.put("idFreind", id);
+                    map.put("idFriend", id);
                     items.add(map);
                 }
                 adapter = new SimpleAdapter(context, items, R.layout.freindlist,
-                        new String[]{"title", "status", "idFreind"},
+                        new String[]{"title", "status", "idFriend"},
                         new int[]{R.id.title, R.id.status});
                 ListView lv = (ListView) findViewById(R.id.list);
                 lv.setAdapter(adapter);
@@ -177,14 +177,14 @@ public class Freinds extends Activity {
         switch (item.getItemId()) {
 
             case R.id.freinds:
-                Intent intentProfile = new Intent(Freinds.this, Profile.class);
+                Intent intentProfile = new Intent(Friends.this, Profile.class);
                 intentProfile.putExtra("id", userId);
-                intentProfile.putExtra("idFreind", userId);
+                intentProfile.putExtra("idFriend", userId);
                 intentProfile.putExtra("accessToken", accessToken);
                 startActivity(intentProfile);
                 return true;
             case R.id.dialogs:
-                Intent intentDialog = new Intent(Freinds.this, Dialogs.class);
+                Intent intentDialog = new Intent(Friends.this, Dialogs.class);
                 intentDialog.putExtra("id", userId);
                 intentDialog.putExtra("accessToken", accessToken);
                 startActivity(intentDialog);
